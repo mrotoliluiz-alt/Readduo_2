@@ -1,0 +1,26 @@
+.conteiner{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.hover{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 1330px;
+    height: 80px;
+
+}
+
+.botoes{
+    background-color: #A2D3FF;
+    border-radius: 5;
+    height: 48px;
+    width: 397px;
+}
+
+.marca{
+    font-family: jsMath-cmbx10;
+}
