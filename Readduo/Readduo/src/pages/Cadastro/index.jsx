@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
-import imagem from "../../assets/Group 50.svg";
+import ImagemLogo from "../../assets/Group 50.svg";
+import Imagem from "../../assets/Group 55.png";
 import styles from './index.module.css';
 
 function Cadastro() {
@@ -28,15 +29,19 @@ function Cadastro() {
 
         <div className={styles.containerItens}>
             
-            <div className={styles.Imagem}>
+            <div className={styles.ImagemLogo}>
 
-                <img src={imagem} alt="Imagem" />
+                <img src={ImagemLogo} alt="Imagem" />
 
             </div>
 
             <div className={styles.form}>
 
-        <h1>Readduo</h1>
+        <div className={styles.Imagem}>
+
+                <img src={Imagem} alt="Imagem" />
+
+            </div>
 
       <input
         type="name"

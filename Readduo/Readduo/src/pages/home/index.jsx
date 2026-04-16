@@ -1,5 +1,6 @@
 import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
+import imagem from "../../assets/Group 55.png";
 
 
 function Home (){
@@ -11,7 +12,13 @@ function Home (){
         
         <div className= {styles.conteiner}>
             <div className={styles.hover}>
-                <h1 className={styles.marca}>Readduo</h1>
+                <div className={styles.imagem}>
+                    
+                    <img src={imagem} alt="Imagem" />
+                    
+                    </div>
+                
+
                 <button className={styles.botoes} onClick={() => navigate('./login')}>Entrar</button>
                 <button className={styles.botoes} onClick={() => navigate('./cadastro')}>Cadastrar</button>
                 </div>
