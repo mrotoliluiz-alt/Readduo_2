@@ -18,9 +18,11 @@ function Home (){
                     
                     </div>
                 
-
-                <button className={styles.botoes} onClick={() => navigate('./login')}>Entrar</button>
+                    <div className={styles.hoBotao}>
+                        <button className={styles.botoes} onClick={() => navigate('./login')}>Entrar</button>
                 <button className={styles.botoes} onClick={() => navigate('./cadastro')}>Cadastrar</button>
+                </div>
+                
                 </div>
                 
                 
