@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import ImagemLogo from "../../assets/Group 50.svg";
 import Imagem from "../../assets/Group 55.png";
@@ -25,7 +24,7 @@ function Cadastro() {
   };
 
   return (
-    <div className={styles.conteiner} onSubmit={handleRegister}>
+    <form className={styles.conteiner} onSubmit={handleRegister}>
 
         <div className={styles.containerItens}>
             
@@ -70,7 +69,7 @@ function Cadastro() {
       
       </div>
       
-    </div>
+    </form>
   );
 }
 
