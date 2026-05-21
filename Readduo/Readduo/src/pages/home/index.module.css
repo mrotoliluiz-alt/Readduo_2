@@ -5,10 +5,7 @@
     width: 100%;
     min-height: 100vh;
 
-    background-image: url('../../assets/fundo.jpg');
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat;
+    background-color: #313131;
 }
 
 /* HEADER */
@@ -21,10 +18,10 @@
     width: 100%;
     min-height: 10vh;
 
-    border: 2px solid #313131;
+    border-bottom: 2px solid #8800f8;
     padding: 20px 40px;
 
-    background-color: #F0F4F7;
+    background-color: #313131;
     gap: 20px;
 }
 

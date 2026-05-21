@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 
-function BotaoC({ texto, onClick }) {
+function Botao({ texto, onClick }) {
     return (
         <button className={styles.botoes} onClick={onClick}>
             {texto}
@@ -8,4 +8,4 @@ function BotaoC({ texto, onClick }) {
     );
 }
 
-export default BotaoC;
+export default Botao;

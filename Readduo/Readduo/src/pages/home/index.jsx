@@ -2,7 +2,7 @@ import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
 import imagem from "../../assets/Group 55.png";
 
-import BotaoC from '../../componentes/botao_azulC';
+import Botao from '../../componentes/botao';
 
 function Home() {
 
@@ -18,12 +18,12 @@ function Home() {
                 </div>
 
                 <div className={styles.hoBotao}>
-                    <BotaoC
+                    <Botao
                         texto="Entrar"
                         onClick={() => navigate('./login')}
                     />
 
-                    <BotaoC
+                    <Botao
                         texto="Cadastrar"
                         onClick={() => navigate('./cadastro')}
                     />
