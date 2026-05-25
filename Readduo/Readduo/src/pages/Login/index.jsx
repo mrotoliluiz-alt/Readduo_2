@@ -3,7 +3,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import styles from './index.module.css';
 import imagem from "../../assets/Group 50.svg";
-import imagemLogo from "../../assets/Group 55.png";
+
 
 function Login() {
   const [email, setEmail] = useState("");

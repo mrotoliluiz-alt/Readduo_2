@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { auth } from "../../firebase";
 import ImagemLogo from "../../assets/Group 50.svg";
-import Imagem from "../../assets/Group 55.png";
 import styles from './index.module.css';
 
 function Cadastro() {

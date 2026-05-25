@@ -26,17 +26,7 @@
     
 }
 
-.Imagem {
-    width: 50%;
-    margin-top: 70px;
-    margin-right: 10px;
-}
 
-.Imagem img {
-    width: 310px;
-    height: 310px;
-    object-fit: cover;
-}
 
 .form {
     width: 50%;

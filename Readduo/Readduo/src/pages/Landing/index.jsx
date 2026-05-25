@@ -1,10 +1,10 @@
 import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
-import imagem from "../../assets/Group 55.png";
+
 
 import Botao from '../../componentes/botao';
 
-function HomeAntes() {
+function Landing() {
 
     const navigate = useNavigate();
 
@@ -13,8 +13,9 @@ function HomeAntes() {
 
             <div className={styles.hover}>
 
-                <div className={styles.imagem}>
-                    <img src={imagem} alt="Imagem" />
+                <div className={styles.titulo}>
+                    <h1>Read</h1>
+                    <h1>duo</h1>
                 </div>
 
                 <div className={styles.hoBotao}>
@@ -35,4 +36,4 @@ function HomeAntes() {
     );
 }
 
-export default HomeAntes;
+export default Landing;
