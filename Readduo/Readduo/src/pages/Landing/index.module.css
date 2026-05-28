@@ -1,45 +1,55 @@
 
-.conteiner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.landing {
     min-height: 100vh;
-
-    background-color: #313131;
+    min-width: 100%;
+    background: #f7fafc;
 }
 
-/* HEADER */
-.hover {
+.navbar {
+    height: 80px;
+    padding: 0 70px;
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 
-    width: 100%;
-    min-height: 10vh;
+    background: white;
 
-    border-bottom: 2px solid #8800f8;
-    padding: 20px 40px;
-
-    background-color: #313131;
-    gap: 20px;
+    border-bottom: 1px solid #e2e8f0;
 }
 
-/* ÁREA DOS BOTÕES */
-.hoBotao {
+.titulo {
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    margin-left: auto;
+    align-items: center;
 }
 
-/* BOTÕES */
-.botoes {
-    background-color: #95F9F6;
-    color: #171C20;
+.logoRead {
+    font-size: 30px;
+    font-weight: 800;
+
+    color: #0f172a;
+}
+
+.logoDuo {
+    font-size: 30px;
+    font-weight: 800;
+
+    color: #0fa6b3;
+}
+
+.boxBotoes {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.botao_home{
+     background-color: #f6f9ff;
+    color: #0b1c2b;
 
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
 
     height: 45px;
     min-width: 140px;
@@ -48,43 +58,4 @@
 
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 3px 3px 9px 2px rgba(0,0,0,0.3);
-
-}
-
-.botoes:hover {
-    opacity: 0.8;
-    box-shadow: none;
-}
-
-/* IMAGEM */
-.titulo{
-    flex-direction: row;
-    
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-
-    .hover {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .hoBotao {
-        margin-left: 0;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .botoes {
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .imagem img {
-        width: 140px;
-    }
 }
