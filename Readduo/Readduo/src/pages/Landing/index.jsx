@@ -26,13 +26,15 @@ function Landing() {
 
                 <div className={styles.boxBotoes}>
 
-                    <button className={styles.botao_home}>
+                    <button className={styles.botao_home}
+                    onClick={() => navigate('/Login')}
+                    >
                     entrar
                     </button>
 
                     <Botao
                         texto="Cadastrar"
-                        onClick={() => navigate('/cadastro')}
+                        onClick={() => navigate('/Cadastro')}
                     />
 
                 </div>

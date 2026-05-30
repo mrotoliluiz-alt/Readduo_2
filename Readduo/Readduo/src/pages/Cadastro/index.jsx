@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { auth } from "../../firebase";
-import ImagemLogo from "../../assets/Group 50.svg";
+import Imagem from "../../assets/Group 50.svg";
 import styles from './index.module.css';
 
 function Cadastro() {
@@ -29,15 +29,13 @@ function Cadastro() {
             
             <div className={styles.ImagemLogo}>
 
-                <img src={ImagemLogo} alt="Imagem" />
+                <img src={Imagem} alt="Imagem" />
 
             </div>
 
             <div className={styles.form}>
 
-        <div className={styles.Imagem}>
-
-                <img src={Imagem} alt="Imagem" />
+            <div >
 
             </div>
 

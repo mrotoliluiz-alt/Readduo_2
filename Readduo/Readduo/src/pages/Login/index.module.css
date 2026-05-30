@@ -54,3 +54,8 @@
     background-color: #95F9F6;
     
 }
+.ImagemLogo img {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+}

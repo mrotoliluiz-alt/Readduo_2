@@ -10,7 +10,7 @@ import Configuracoes from "./pages/Configuracoes";
 import Historico from "./pages/Historico";
 import Oficina from "./pages/Oficina";
 import Perfil from "./pages/Perfil";
-import Pesquisa from "./pages/Perfil";
+import Pesquisa from "./pages/Pesquisa";
 
 
 

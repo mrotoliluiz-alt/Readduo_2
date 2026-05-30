@@ -22,41 +22,96 @@ function Login() {
   };
 
   return (
-    <div onSubmit={handleLogin} className={styles.conteiner}>
+  <div className={styles.loginContainer}>
 
-      <div className={styles.containerItens}>
+    {/* Lado esquerdo */}
+    <div className={styles.leftSide}>
 
-          <div className={styles.Imagem}>
+      <button className={styles.backButton}>
+        ← Voltar ao início
+      </button>
 
-            <img src={imagem} alt="Imagem" />
+      <div className={styles.leftContent}>
 
-          </div>
-        <div className={styles.form}>
+        <div className={styles.logoBox}>
+          <img src={imagem} alt="Readduo" />
+          <span>Readduo</span>
+        </div>
 
-        <img src={imagemLogo} alt="Imagem" />
+        <h1>
+          Bem-vindo
+          <br />
+          de volta!
+        </h1>
 
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        <p>
+          Continue sua jornada literária.
+          Suas histórias e leituras estão esperando por você.
+        </p>
 
-      <input
-        type="password"
-        placeholder="Senha"
-        onChange={(e) => setSenha(e.target.value)}
-      />
-
-      <button type="submit" className={styles.bot}>Entrar</button>
-
-      {erro && <p>{erro}</p>}
+        <ul>
+          <li>✓ Retome onde parou</li>
+          <li>✓ Novas missões te aguardam</li>
+          <li>✓ Sua sequência está ativa</li>
+        </ul>
 
       </div>
-      
-      </div>
-      
+
+      <span className={styles.footer}>
+        © 2026 Readduo
+      </span>
+
     </div>
-  );
+
+    {/* Lado direito */}
+    <div className={styles.rightSide}>
+
+      <form onSubmit={handleLogin} className={styles.formCard}>
+
+        <h2>Entrar na conta</h2>
+
+        <p>
+          Digite suas credenciais para acessar
+        </p>
+
+        <input
+          type="email"
+          placeholder="Seu e-mail"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Sua senha"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+        />
+
+        <button type="submit">
+          Entrar →
+        </button>
+
+        {erro && (
+          <span className={styles.erro}>
+            {erro}
+          </span>
+        )}
+
+        <div className={styles.register}>
+          Não tem conta?
+          <a href="/Cadastro">
+            Criar conta grátis
+          </a>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+);
+
 }
 
 export default Login;
