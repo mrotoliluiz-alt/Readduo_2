@@ -25,7 +25,7 @@ function Login() {
   <div className={styles.loginContainer}>
 
     {/* Lado esquerdo */}
-    <div className={styles.leftSide}>
+    <div className={styles.ladoEsquerdo}>
 
       <button className={styles.backButton}>
         ← Voltar ao início
@@ -34,7 +34,6 @@ function Login() {
       <div className={styles.leftContent}>
 
         <div className={styles.logoBox}>
-          <img src={imagem} alt="Readduo" />
           <span>Readduo</span>
         </div>
 
