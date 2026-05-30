@@ -26,8 +26,8 @@ function Landing() {
 
                 <div className={styles.boxBotoes}>
 
-                    <button className={}>
-
+                    <button className={styles.botao_home}>
+                    entrar
                     </button>
 
                     <Botao

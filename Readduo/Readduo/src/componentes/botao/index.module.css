@@ -1,12 +1,13 @@
 .botoes {
-    background-color: #1e63e2;
+    background-color: #0fa6b3;
     color: #e3f2ff;
+    font-weight: bold;
 
     border: none;
     border-radius: 10px;
 
-    height: 45px;
-    min-width: 140px;
+    height: 35px;
+    min-width: 110px;
 
     padding: 0 20px;
 
@@ -16,5 +17,4 @@
 
 .botoes:hover {
     opacity: 0.8;
-    background-color: #631ee2;
 } 
