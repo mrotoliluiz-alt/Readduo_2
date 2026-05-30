@@ -1,11 +1,24 @@
-import styles from './index.module.css';
 
-function Botao({ texto, onClick }) {
+import styles from "./index.module.css";
+
+function Botao({
+    texto,
+    onClick,
+    type = "button",
+    variante = "primary",
+    disabled = false
+}) {
     return (
-        <button className={styles.botoes} onClick={onClick}>
+        <button
+            type={type}
+            onClick={onClick}
+            disabled={disabled}
+            className={`${styles.botao} ${styles[variante]}`}
+        >
             {texto}
         </button>
     );
 }
 
 export default Botao;
+

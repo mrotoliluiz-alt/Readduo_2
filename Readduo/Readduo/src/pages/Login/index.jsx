@@ -3,6 +3,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import styles from './index.module.css';
 import imagem from "../../assets/Group 50.svg";
+import Botao from '../../componentes/botao';
+import { Navigate } from "react-router-dom";
 
 
 function Login() {
@@ -24,17 +26,19 @@ function Login() {
   return (
   <div className={styles.loginContainer}>
 
-    {/* Lado esquerdo */}
     <div className={styles.ladoEsquerdo}>
 
-      <button className={styles.backButton}>
-        ← Voltar ao início
-      </button>
+      
 
       <div className={styles.leftContent}>
 
+        <a href="/">
+            -- voltar
+          </a>
+
+        {/* Logo e nome do site */}
         <div className={styles.logoBox}>
-          <span>Readduo</span>
+          <h2>Readduo</h2>
         </div>
 
         <h1>
@@ -56,9 +60,9 @@ function Login() {
 
       </div>
 
-      <span className={styles.footer}>
+      <p>
         © 2026 Readduo
-      </span>
+      </p>
 
     </div>
 
@@ -87,9 +91,10 @@ function Login() {
           onChange={(e) => setSenha(e.target.value)}
         />
 
-        <button type="submit">
-          Entrar →
-        </button>
+        <Botao
+        texto='Entrar'
+        variante= 'login'
+        />
 
         {erro && (
           <span className={styles.erro}>

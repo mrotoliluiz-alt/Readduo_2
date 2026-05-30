@@ -10,7 +10,7 @@
   width: 50%;
   background: linear-gradient(
     135deg,
-    #13b7c8 0%,
+    #0fa6b3 0%,
     #2563eb 100%
   );
 
@@ -23,6 +23,7 @@
 
   position: relative;
   overflow: hidden;
+  
 }
 
 .ladoEsquerdo::before {
@@ -55,7 +56,7 @@
   bottom: -100px;
 }
 
-.backButton {
+.Botao {
   background: none;
   border: none;
   color: white;
@@ -96,13 +97,13 @@
   padding: 0;
 }
 
-.leftContent li {
-  margin-bottom: 14px;
+p{
+    font-size: 100px;
 }
 
-.footer {
-  font-size: 13px;
-  opacity: .7;
+.leftContent li {
+  margin-bottom: 14px;
+  font-size: 20px;
 }
 
 .rightSide {
