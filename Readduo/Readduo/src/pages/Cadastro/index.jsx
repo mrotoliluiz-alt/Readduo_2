@@ -2,6 +2,7 @@ import { useState } from "react";
 import { auth } from "../../firebase";
 import Imagem from "../../assets/Group 50.svg";
 import styles from './index.module.css';
+import Botao from "../../componentes/botao";
 
 function Cadastro() {
   const [email, setEmail] = useState("");
@@ -23,51 +24,97 @@ function Cadastro() {
   };
 
   return (
-    <form className={styles.conteiner} onSubmit={handleRegister}>
 
-        <div className={styles.containerItens}>
-            
-            <div className={styles.ImagemLogo}>
+    <div className={styles.conteiner}>
 
-                <img src={Imagem} alt="Imagem" />
+      <div className={styles.LadoEsquerdo}>
+      
+      <div className={styles.LadoE_componentes}>
 
-            </div>
-
-            <div className={styles.form}>
-
-            <div >
-
-            </div>
-
-      <input
-        type="name"
-        placeholder="Nome"
-        onChange={(e) => setEmail(e.target.value)}
+        <a href="/">
+        voltar
+        </a>
         
-      />
+        <h2>Readduo</h2>
 
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={(e) => setEmail(e.target.value)}
-      />
+        <h2 className={styles.Hgrande}>
+          Comece sua 
+          <br />
+          Jornada hoje
+        </h2>
 
-      <input
-        type="password"
-        placeholder="Senha"
-        onChange={(e) => setSenha(e.target.value)}
-      />
+        <p>Crie sua conta gratis e acesse uma 
+          <br />
+          comunidade de leitores e escritores
+          <br />
+          apaixonados 
+        </p>
 
-      <button className={styles.bot}  type="submit">Cadastrar</button>
-
-      {erro && <p>{erro}</p>}
-      {sucesso && <p>{sucesso}</p>}
+        <p>
+        © 2026 Readduo
+      </p>
       </div>
+      </div>
+
+      <div className={styles.LadoDireito}>
+
+      <form onSubmit={handleRegister} className={styles.ConteinerForm}>
+
+        <h2>Entrar na conta</h2>
+
+        <p>
+          Digite suas credenciais para acessar
+        </p>
+
+        <input
+          type="email"
+          placeholder="Seu e-mail"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+
+        <input
+          type="password"
+          placeholder="Sua senha"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+        />
+
+        <Botao
+        texto='Cadastrar'
+        variante= 'login'
+        />
+
+        {erro && (
+          <span className={styles.erro}>
+            {erro}
+          </span>
+        )}
+
+        <div className={styles.Entrar}>
+          Ja tem conta
+          <a href="/Login">
+            Entrar
+          </a>
+        </div>
+
+      </form>
+
+    
+
       
       </div>
       
-    </form>
-  );
+    </div>
+
+
+
+
+
+
+
+
+)
 }
 
 export default Cadastro;

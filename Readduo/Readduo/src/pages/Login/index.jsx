@@ -41,11 +41,11 @@ function Login() {
           <h2>Readduo</h2>
         </div>
 
-        <h1>
+        <h2 className={styles.Hgrande}>
           Bem-vindo
           <br />
           de volta!
-        </h1>
+        </h2>
 
         <p>
           Continue sua jornada literária.

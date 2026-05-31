@@ -1,73 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.conteiner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #f8fafc;
+}
 
-.conteiner {
+.LadoEsquerdo{
+    width: 50%;
+    background: linear-gradient(
+    135deg,
+    #0fa6b3 0%,
+    #2563eb 100%
+  );
+
+    padding: 48px;
+    color: white;
+
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.LadoEsquerdo::before {
+  content: "";
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.06);
+
+  left: 450px;
+  top: -100px;
+}
+
+.LadoEsquerdo::after {
+  content: "";
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.06);
+
+  right: 450px;
+  bottom: -100px;
+}
+
+.LadoE_componentes{
+    max-width: 380px;
+}
+
+.LadoE_componentes p{
+    font-size: 18px;
+  opacity: .9;
+  margin-bottom: 32px;
+}
+
+.Hgrande{
+    font-size: 5.2em;
+    font-weight: bold;
+}
+
+.LadoDireito{
+    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
+}
+
+.ConteinerForm{
     width: 100%;
-    height: 100vh;
-
-    background-image: url('../../assets/fundo.jpg');
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
-.containerItens {
-    display: flex; 
-    padding: 40px;
-    flex-direction: row;
-    
-    height: 550px;
-    width: 750px; 
-    border-radius: 1rem; 
-    overflow: hidden;
-    background-color: #FFFFFF;
-    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.3);
-    font-family: "Inter", sans-serif;
+.ConteinerForm h2{
+    font-size: 48px;
+    color: #0f172a;
+    margin-bottom: 10px;
 }
 
-.ImagemLogo {
-    width: 50%;
-    margin-top: 70px;
-    margin-right: 10px;
+.ConteinerForm p{
+    color: #64748b;
+  margin-bottom: 30px;
 }
 
-.ImagemLogo img {
-    width: 310px;
-    height: 310px;
-    object-fit: cover;
+.ConteinerForm input{
+    height: 58px;
+  border: 1px solid #dbe3ee;
+  border-radius: 14px;
+  padding: 0 18px;
+  margin-bottom: 18px;
+  font-size: 15px;
 }
 
-.form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px;
-    gap: 10px;
+.Entrar{
+    margin-top: 25px;
+  text-align: center;
+  color: #64748b;
 }
 
-.bot{
-    background-color: #A2D3FF;
-    color: #171C20;
-    border-radius: 5;
-    
-    box-shadow: 3px 3px 9px 2px rgba(0,0,0,0.3);
+.Entrar a{
+    color: #0fa6b3;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 5px;
 }
 
-.bot:hover{
-    
-    box-shadow: none;
+.erro {
+  margin-top: 12px;
+  color: #ef4444;
 }
 
-.form input{
-    background-color: #95F9F6;
-    
-}
+@media (max-width: 900px) {
+  .leftSide {
+    display: none;
+  }
 
-.Imagem img{
-    width: 300px;
-   height: 70px;
+  .rightSide {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .formCard {
+    max-width: 100%;
+  }
 }

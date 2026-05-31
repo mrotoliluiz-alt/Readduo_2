@@ -56,14 +56,6 @@
   bottom: -100px;
 }
 
-.Botao {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-}
-
 .leftContent {
   max-width: 380px;
 }
@@ -75,19 +67,10 @@
   margin-bottom: 40px;
 }
 
-.logoBox span {
-  font-size: 34px;
-  font-weight: 700;
-}
 
-.leftContent h1 {
-  font-size: 64px;
-  line-height: 1.1;
-  margin-bottom: 24px;
-}
 
 .leftContent p {
-  font-size: 18px;
+  font-size: 28px;
   opacity: .9;
   margin-bottom: 32px;
 }
@@ -97,9 +80,6 @@
   padding: 0;
 }
 
-p{
-    font-size: 100px;
-}
 
 .leftContent li {
   margin-bottom: 14px;
@@ -108,18 +88,15 @@ p{
 
 .rightSide {
   flex: 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: #fff;
 }
 
 .formCard {
   width: 100%;
   max-width: 450px;
-
   display: flex;
   flex-direction: column;
 }
@@ -148,24 +125,7 @@ p{
   font-size: 15px;
 }
 
-.formCard button {
-  height: 58px;
 
-  border: none;
-  border-radius: 14px;
-
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  background: linear-gradient(
-    90deg,
-    #13b7c8,
-    #2563eb
-  );
-}
 
 .register {
   margin-top: 25px;
@@ -183,6 +143,11 @@ p{
 .erro {
   margin-top: 12px;
   color: #ef4444;
+}
+
+.Hgrande{
+  font-weight: bold;
+  font-size: 5.2em;
 }
 
 @media (max-width: 900px) {
