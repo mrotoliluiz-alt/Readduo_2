@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { auth } from "../../firebase";
 import Imagem from "../../assets/Group 50.svg";
 import styles from './index.module.css';
@@ -13,6 +14,8 @@ const [confirmarSenha, setConfirmarSenha] = useState("");
 
 const [erro, setErro] = useState("");
 const [sucesso, setSucesso] = useState("");
+
+const navigate = useNavigate();
 
   const handleRegister = async (e) => {
   e.preventDefault();
@@ -111,6 +114,7 @@ const [sucesso, setSucesso] = useState("");
         <Botao
         texto='Cadastrar'
         variante= 'login'
+        onClick={() => navigate("/Login")}
         />
 
           {erro && (

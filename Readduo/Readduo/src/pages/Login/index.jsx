@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import styles from './index.module.css';
@@ -8,6 +9,8 @@ import { Navigate } from "react-router-dom";
 
 
 function Login() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [erro, setErro] = useState("");
@@ -94,6 +97,7 @@ function Login() {
         <Botao
         texto='Entrar'
         variante= 'login'
+        onClick={() => navigate('/Home')}
         />
 
         {erro && (
