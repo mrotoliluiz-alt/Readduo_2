@@ -35,7 +35,7 @@
 
   background: rgba(255,255,255,0.06);
 
-  left: 450px;
+  left: 550px;
   top: -100px;
 }
 
@@ -50,7 +50,7 @@
 
   background: rgba(255,255,255,0.06);
 
-  right: 450px;
+  right: 600px;
   bottom: -100px;
 }
 
@@ -58,10 +58,18 @@
     max-width: 380px;
 }
 
+.LadoE_componentes a{
+    color: white;
+}
+
+.LadoE_componentes h2{
+    margin-top: 2em;
+}
+
 .LadoE_componentes p{
     font-size: 18px;
-  opacity: .9;
-  margin-bottom: 32px;
+    opacity: .9;
+    margin-bottom: 32px;
 }
 
 .Hgrande{
