@@ -1,0 +1,50 @@
+.layout {
+    display: flex;
+    background: #f8fafc;
+    width: 100%;
+}
+
+.main {
+    flex: 1;
+    padding: 24px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.welcome {
+    background: #f5fdff;
+
+    border: 1px solid #b8eef4;
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    gap: 16px;
+}
+
+.statCard {
+    width: 120px;
+    height: 90px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    border: 1px solid #dbe4ee;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
