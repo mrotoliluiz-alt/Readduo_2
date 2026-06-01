@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
+import Layout from "./componentes/layout";
 import Landing from "./pages/Landing";
 import Home from "./pages/home";
 import Login from "./pages/Login"
@@ -17,9 +18,11 @@ import Pesquisa from "./pages/Pesquisa";
 function App() {
   return (
     <Routes>
+        
         <Route path="/" element={<Landing />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Cadastro" element={<Cadastro />} />
+        <Route element={<Layout />}>
         <Route path="/Home" element={<Home />} />
         <Route path="/Salvos" element={<Salvos />} />
         <Route path="/Chat" element={<Chat />} />
@@ -28,6 +31,7 @@ function App() {
         <Route path="/Oficina" element={<Oficina />} />
         <Route path="/Perfil" element={<Perfil />} />
         <Route path="/Pesquisa" element={<Pesquisa />} />
+        </Route>
     </Routes>
     
   )

@@ -1,3 +1,4 @@
+import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./index.module.css";
 import logo from "../../assets/Group 50.svg";
 import {
@@ -8,8 +9,14 @@ import {
   PenTool,
   GraduationCap
 } from "lucide-react";
+import { useState } from "react";
+
 
 function Sidebar() {
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <aside className={styles.sidebar}>
 
@@ -21,57 +28,45 @@ function Sidebar() {
         <h2>Readduo</h2>
       </div>
 
-      <nav className={styles.menu}>
+      <nav className={styles.nav}>
 
-        <a className={styles.active}>
-          <House size={20} />
-          Início
-        </a>
+    <button
+        className={
+            location.pathname === "/home"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/home")}
+    >
+        🏠
+        <span>Início</span>
+    </button>
 
-        <a>
-          <BookOpen size={20} />
-          Biblioteca
-        </a>
+    <button
+        className={
+            location.pathname === "/oficina"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/oficina")}
+    >
+        📚
+        <span>Oficina</span>
+    </button>
 
-        <a>
-          <Search size={20} />
-          Explorar
-        </a>
+    <button
+        className={
+            location.pathname === "/Pesquisa"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Pesquisa")}
+    >
+        🔍
+        <span>Pesquisa</span>
+    </button>
 
-        <a>
-          <Target size={20} />
-          Missões
-        </a>
-
-        <a>
-          <PenTool size={20} />
-          Oficina Autoral
-        </a>
-
-        <a>
-          <GraduationCap size={20} />
-          Área de Estudo
-        </a>
-
-      </nav>
-
-      <div className={styles.missaoCard}>
-
-        <div className={styles.missaoIcon}>
-          ✨
-        </div>
-
-        <h3>Continue evoluindo!</h3>
-
-        <p>
-          Complete leituras e desbloqueie conquistas.
-        </p>
-
-        <button>
-          Ver missões
-        </button>
-
-      </div>
+</nav>
 
     </aside>
   );

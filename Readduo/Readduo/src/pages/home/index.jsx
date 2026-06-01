@@ -5,8 +5,6 @@ function Home() {
   return (
     <div className={styles.layout}>
 
-      <Sidebar />
-
       <main className={styles.main}>
 
         <header className={styles.header}>
