@@ -1,6 +1,6 @@
 import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
-
+import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
 
 function Landing() {
@@ -12,6 +12,10 @@ function Landing() {
 
             <nav className={styles.navbar}>
 
+                <div className={styles.logo}>
+                    <img src= {logo} alt="logo" />
+
+                    
                 <div className={styles.titulo}>
 
                     <h1 className={styles.logoRead}>
@@ -23,6 +27,9 @@ function Landing() {
                     </h1>
 
                 </div>
+                
+                </div>
+
 
                 <div className={styles.boxBotoes}>
 

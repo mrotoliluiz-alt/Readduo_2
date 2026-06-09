@@ -38,7 +38,7 @@ function Sidebar() {
         }
         onClick={() => navigate("/home")}
     >
-        🏠
+        <House></House>
         <span>Início</span>
     </button>
 
@@ -50,7 +50,7 @@ function Sidebar() {
         }
         onClick={() => navigate("/oficina")}
     >
-        📚
+        <BookOpen></BookOpen>
         <span>Oficina</span>
     </button>
 
@@ -62,7 +62,7 @@ function Sidebar() {
         }
         onClick={() => navigate("/Pesquisa")}
     >
-        🔍
+        <Search></Search>
         <span>Pesquisa</span>
     </button>
 
