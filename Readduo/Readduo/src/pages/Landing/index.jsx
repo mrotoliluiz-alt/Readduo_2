@@ -49,6 +49,31 @@ function Landing() {
 
             </nav>
 
+            <div className={styles.corpo}>
+
+                <div className={styles.esquerda}>
+
+                <div className={styles.Textos}>
+                <h2>Leia para</h2>
+                <h2> <span className={styles.destaque}>Conhecer</span>, pratique</h2>
+                <h2>Para <span className={styles.destaque}>aprender</span></h2>
+                <h3>O <p className={styles.destaque}>Readduo</p> é pra você</h3>
+
+                </div>
+
+                
+
+            </div>
+
+            <div className={styles.direita}>
+
+
+            </div>
+
+            </div>
+
+            
+
         </div>
     );
 }
