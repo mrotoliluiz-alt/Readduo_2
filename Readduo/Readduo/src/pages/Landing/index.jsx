@@ -2,6 +2,11 @@ import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
+import {
+  Flame,
+  BookText,
+  Star
+} from "lucide-react";
 
 function Landing() {
 
@@ -57,7 +62,23 @@ function Landing() {
                 <h2>Leia para</h2>
                 <h2> <span className={styles.destaque}>Conhecer</span>, pratique</h2>
                 <h2>Para <span className={styles.destaque}>aprender</span></h2>
-                <h3>O <p className={styles.destaque}>Readduo</p> é pra você</h3>
+                <h3>O <span className={styles.destaqueMenor}>Readduo</span> é para você!</h3>
+
+                <div className={styles.conteinerSinb}>
+
+                    <div className={styles.sinb}>
+                        <p> <BookText color='#0FA6B3'></BookText> Variedade de Livros!</p>
+                    </div>
+
+                    <div className={styles.sinb}>
+                        <p> <Flame color='#0FA6B3'></Flame> Mantenha o Ritmo!</p>
+                    </div>
+
+                    <div className={styles.sinb}>
+                        <p> <Star color='#0FA6B3'></Star> XP e Conquistas!</p>
+                    </div>
+                    
+                </div>
 
                 </div>
 
