@@ -81,7 +81,7 @@
 }
 
 .corpo{
-    min-height: 100vh;
+    min-height: 91%;
     min-width: 100%;
     padding: 0 70px;
     
@@ -141,7 +141,7 @@
     align-items: center;
     gap: 12px;   
     flex-direction: row;
-    min-width: 250px;
+    min-width: 230px;
     height: 60px;
 
     border-radius: 10px;
