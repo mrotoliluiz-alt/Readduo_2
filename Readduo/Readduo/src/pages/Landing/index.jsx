@@ -5,7 +5,8 @@ import Botao from '../../componentes/botao';
 import {
   Flame,
   BookText,
-  Star
+  Star,
+  LibraryBig
 } from "lucide-react";
 
 function Landing() {
@@ -64,6 +65,8 @@ function Landing() {
                 <h2>Para <span className={styles.destaque}>aprender</span></h2>
                 <h3>O <span className={styles.destaqueMenor}>Readduo</span> é para você!</h3>
 
+                </div>
+
                 <div className={styles.conteinerSinb}>
 
                     <div className={styles.sinb}>
@@ -75,12 +78,15 @@ function Landing() {
                     </div>
 
                     <div className={styles.sinb}>
-                        <p> <Star color='#0FA6B3'></Star> XP e Conquistas!</p>
+                        <Star color='#0FA6B3'></Star>
+                        <p>  XP e Conquistas!</p>
                     </div>
                     
                 </div>
 
-                </div>
+                <h3 className={styles.livraria}> <LibraryBig color='#0FA6B3' width={38} height={33}></LibraryBig> Conheça alguns de nossos livros </h3>
+
+                
 
                 
 
