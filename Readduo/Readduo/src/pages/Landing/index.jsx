@@ -70,11 +70,13 @@ function Landing() {
                 <div className={styles.conteinerSinb}>
 
                     <div className={styles.sinb}>
-                        <p> <BookText color='#0FA6B3'></BookText> Variedade de Livros!</p>
+                        <BookText color='#0FA6B3'></BookText>
+                        <p>  Variedade de Livros!</p>
                     </div>
 
                     <div className={styles.sinb}>
-                        <p> <Flame color='#0FA6B3'></Flame> Mantenha o Ritmo!</p>
+                        <Flame color='#0FA6B3' className={styles.icone}></Flame>
+                        <p>  Mantenha o Ritmo!</p>
                     </div>
 
                     <div className={styles.sinb}>
