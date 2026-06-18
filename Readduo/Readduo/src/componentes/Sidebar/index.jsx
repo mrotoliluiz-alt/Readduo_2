@@ -5,9 +5,9 @@ import {
   House,
   BookOpen,
   Search,
-  Target,
+  History,
   PenTool,
-  GraduationCap
+  User
 } from "lucide-react";
 import { useState } from "react";
 
@@ -50,7 +50,7 @@ function Sidebar() {
         }
         onClick={() => navigate("/oficina")}
     >
-        <BookOpen></BookOpen>
+        <PenTool />
         <span>Oficina</span>
     </button>
 
@@ -64,6 +64,42 @@ function Sidebar() {
     >
         <Search></Search>
         <span>Pesquisa</span>
+    </button>
+
+    <button
+        className={
+            location.pathname === "/Historico"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Historico")}
+    >
+        <History />
+        <span>Histórico</span>
+    </button>
+
+     <button
+        className={
+            location.pathname === "/Salvos"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Salvos")}
+    >
+        < BookOpen />
+        <span>Salvos</span>
+    </button>
+
+    <button
+        className={
+            location.pathname === "/Perfil"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Perfil")}
+    >
+        < User />
+        <span>Perfil</span>
     </button>
 
 </nav>

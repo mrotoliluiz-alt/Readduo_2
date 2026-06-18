@@ -3,6 +3,6 @@ import { href, useNavigate } from 'react-router-dom';
 
 export default function Pesquisa(){
     return(
-        <h1>Pesquisa/ explorar </h1>
+        <h1>Perfil Usuario</h1>
     )
 }
