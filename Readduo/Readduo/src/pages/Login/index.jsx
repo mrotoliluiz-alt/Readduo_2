@@ -3,10 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import styles from './index.module.css';
-import imagem from "../../assets/Group 50.svg";
+import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
 import { Navigate } from "react-router-dom";
-
+import {
+  House,
+  BookOpen,
+  ArrowLeft,
+  History,
+  PenTool,
+  User
+} from "lucide-react";
 
 function Login() {
   const navigate = useNavigate();
@@ -36,16 +43,17 @@ function Login() {
       <div className={styles.leftContent}>
 
         <a href="/">
-            -- voltar
+             Voltar ao Inicio <ArrowLeft></ArrowLeft>
           </a>
 
         {/* Logo e nome do site */}
         <div className={styles.logoBox}>
-          <h2>Readduo</h2>
+          <h2>Read</h2>
+          <h2 color="#f0f0">duo</h2>
         </div>
 
         <h2 className={styles.Hgrande}>
-          Bem-vindo
+          <BookOpen size={40}></BookOpen> Bem-vindo
           <br />
           de volta!
         </h2>
