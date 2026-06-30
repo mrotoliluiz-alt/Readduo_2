@@ -48,20 +48,26 @@ function Login() {
 
         {/* Logo e nome do site */}
         <div className={styles.logoBox}>
+          <img src= {logo} alt="logo" />
+          
           <h2>Read</h2>
-          <h2 color="#f0f0">duo</h2>
+          <h2 className={styles.titulo}>duo</h2>
         </div>
 
+        <BookOpen size={40}></BookOpen>
+
+        <div className={styles.texto}>
+
         <h2 className={styles.Hgrande}>
-          <BookOpen size={40}></BookOpen> Bem-vindo
+           Bem-vindo de
           <br />
-          de volta!
+          {' '}volta!
         </h2>
 
         <p>
-          Continue sua jornada literária.
-          Suas histórias e leituras estão esperando por você.
+          Continue explorando, lendo e praticando! Novas histórias esperam por você.
         </p>
+        </div>
 
         <ul>
           <li>✓ Retome onde parou</li>
