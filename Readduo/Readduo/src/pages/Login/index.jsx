@@ -54,14 +54,14 @@ function Login() {
           <h2 className={styles.titulo}>duo</h2>
         </div>
 
-        <BookOpen size={40}></BookOpen>
+        
 
         <div className={styles.texto}>
-
+        
         <h2 className={styles.Hgrande}>
-           Bem-vindo de
+          <BookOpen size={40}></BookOpen> Bem-vindo de
           <br />
-          {' '}volta!
+          volta!
         </h2>
 
         <p>
