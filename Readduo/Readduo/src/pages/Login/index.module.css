@@ -80,12 +80,15 @@
   font-size: 28px;
   opacity: .9;
   margin-bottom: 32px;
+  margin-left: 32px;
 }
 
 .leftContent a {
+  margin-bottom: 25px;
+  font-weight: bold;
   color: white;
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .leftContent ul {
@@ -172,18 +175,82 @@
   font-size: 5.2em;
 }
 
-@media (max-width: 900px) {
-  .leftSide {
-    display: none;
+@media screen and ( max-width: 768px){
+  .loginContainer{
+    display: flex;
+    flex-direction: column;
   }
-
-  .rightSide {
+  .ladoEsquerdo{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     width: 100%;
-    padding: 24px;
+    height: 50%;
+    display: block;
+    padding: 2em 2em;
   }
 
-  .formCard {
-    max-width: 100%;
+  .leftContent a{
+    font-size: 15px;
+    margin-bottom: 10px;
   }
+
+   .logoBox h2{
+    font-size: 40px;
+  }
+
+  .logoBox img{
+    width: 60px;
+    height: 60px;
+  }
+  .logoBox{
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  .Hgrande{
+    font-size: 50px;
+    margin-top: 35px;
+  }
+
+  .leftContent p {
+  font-size: 20px;
+}
+
+  .rightSide{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    display: block;
+  }
+
+ .formCard {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formCard p{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.formCard input{
+  
+  height: 50px ;
+  width: 23em;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  padding: 0 10px;
+}
+
+.register{
+  margin-top: 10px;
+  font-size: 15px;
+}
+.register a{
+  font-size: 15px;
+}
 }
 

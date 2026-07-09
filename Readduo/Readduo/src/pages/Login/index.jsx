@@ -10,7 +10,7 @@ import {
   House,
   BookOpen,
   ArrowLeft,
-  History,
+  CircleCheckBig,
   PenTool,
   User
 } from "lucide-react";
@@ -59,9 +59,9 @@ function Login() {
         <div className={styles.texto}>
         
         <h2 className={styles.Hgrande}>
-          <BookOpen size={40}></BookOpen> Bem-vindo de
+          <BookOpen size={40}></BookOpen> Bem-vindo
           <br />
-          volta!
+          de volta!
         </h2>
 
         <p>
@@ -70,9 +70,9 @@ function Login() {
         </div>
 
         <ul>
-          <li>✓ Retome onde parou</li>
-          <li>✓ Novas missões te aguardam</li>
-          <li>✓ Sua sequência está ativa</li>
+          <li> <CircleCheckBig /> Retome onde parou</li>
+          <li> <CircleCheckBig /> Novas missões te aguardam</li>
+          <li> <CircleCheckBig /> Sua sequência está ativa</li>
         </ul>
 
       </div>
