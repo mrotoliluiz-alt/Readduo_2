@@ -1,13 +1,14 @@
-.layout {
-    display: flex;
-    background: #f8fafc;
-    width: 100%;
+.Conteiner {
+    display:flex;
+    flex-direction:column;
+
+    flex:1;
+    width:100%;
+    min-width:0;
+
+    background:#f8fafc;
 }
 
-.main {
-    flex: 1;
-    padding: 24px;
-}
 
 .header {
     margin-bottom: 20px;
@@ -25,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .stats {

@@ -2,10 +2,11 @@ import styles from "./index.module.css";
 import Sidebar from "../../componentes/Sidebar";
 
 function Home() {
-  return (
-    <div className={styles.layout}>
 
-      <main className={styles.main}>
+  return (
+    <div className={styles.Conteiner}>
+
+      
 
         <header className={styles.header}>
           <h1>Início</h1>
@@ -14,7 +15,7 @@ function Home() {
         <section className={styles.welcome}>
 
           <div>
-            <h2>Olá, Luna! 👋</h2>
+            <h2>Olá, Luna! </h2>
 
             <p>
               Continue sua jornada literária.
@@ -51,9 +52,9 @@ function Home() {
           <h2>Continue lendo</h2>
         </section>
 
-      </main>
+      </div>
 
-    </div>
+    
   );
 }
 
