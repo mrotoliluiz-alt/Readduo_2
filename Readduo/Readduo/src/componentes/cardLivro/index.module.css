@@ -1,0 +1,209 @@
+.card {
+
+    width: 250px;
+
+    flex-shrink: 0;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #dbe4ee;
+
+    transition: .25s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.10);
+
+}
+
+/* ================= IMAGEM ================= */
+
+.imagemContainer {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+}
+
+.imagem {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+/* ============ PLACEHOLDER ============ */
+
+.placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #0FA6B3,
+        #2563eb
+    );
+
+    color: white;
+
+    gap: 12px;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.placeholder h4 {
+
+    font-size: 2rem;
+
+    margin: 0;
+
+}
+
+.placeholder span {
+
+    font-size: 1.4rem;
+
+    opacity: .9;
+
+}
+
+/* ================= TAG ================= */
+
+.tag {
+
+    position: absolute;
+
+    top: 14px;
+
+    left: 14px;
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    padding: 6px 14px;
+
+    border-radius: 30px;
+
+}
+
+/* ================= FAVORITO ================= */
+
+.salvar {
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 14px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,.35);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+.salvar:hover {
+
+    background: #0FA6B3;
+
+}
+
+/* ================= INFORMAÇÕES ================= */
+
+.info {
+
+    padding: 18px;
+
+}
+
+.info h3 {
+
+    color: #0F1C64;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 6px;
+
+}
+
+.info p {
+
+    color: #64748b;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 18px;
+
+}
+
+/* ================= RODAPÉ ================= */
+
+.footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.footer span {
+
+    color: #64748b;
+
+    font-size: 1.4rem;
+
+}

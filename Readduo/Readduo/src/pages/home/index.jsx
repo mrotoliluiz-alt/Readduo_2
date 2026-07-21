@@ -1,5 +1,6 @@
 import styles from "./index.module.css";
 import Sidebar from "../../componentes/Sidebar";
+import CardLivro from "../../componentes/cardLivro";
 import {Flame, Star, House, PenTool, BookOpen } from "lucide-react";
 
 function Home() {
@@ -58,35 +59,50 @@ function Home() {
 
           <div className={styles.leitCard}>
 
-            <div className={styles.card}>
-            <img src="img.jpg" alt="imagem aleatoria"  className={styles.imgCard}/>
-            <h2>Texto Exemplo:</h2>
-            <p className={styles.descricao}> Exemplo de descricao</p>
-            </div>
+            <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+            imagem="img/duna.jpg"
+            tag="Clássico"
+            corTag="#4f7cff"
+            />
 
-            <div className={styles.card}>
-            <img src="img.jpg" alt="imagem aleatoria"  className={styles.imgCard}/>
-            <h2>Texto Exemplo:</h2>
-            <p className={styles.descricao}> Exemplo de descricao</p>
-            </div>
+            <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+            imagem="img/duna.jpg"
+            tag="Clássico"
+            corTag="#4f7cff"
+            />
 
-            <div className={styles.card}>
-            <img src="img.jpg" alt="imagem aleatoria"  className={styles.imgCard}/>
-            <h2>Texto Exemplo:</h2>
-            <p className={styles.descricao}> Exemplo de descricao</p>
-            </div>
+            <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+            imagem="img/duna.jpg"
+            tag="Clássico"
+            corTag="#4f7cff"
+            />
 
-            <div className={styles.card}>
-            <img src="img.jpg" alt="imagem aleatoria"  className={styles.imgCard}/>
-            <h2>Texto Exemplo:</h2>
-            <p className={styles.descricao}> Exemplo de descricao</p>
-            </div>
+            <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+            imagem="img/duna.jpg"
+            tag="Clássico"
+            corTag="#4f7cff"
+            />
 
-            <div className={styles.card}>
-            <img src="img.jpg" alt="imagem aleatoria"  className={styles.imgCard}/>
-            <h2>Texto Exemplo:</h2>
-            <p className={styles.descricao}> Exemplo de descricao</p>
-            </div>
+            <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+            imagem="img/duna.jpg"
+            tag="Clássico"
+            corTag="#4f7cff"
+            />
 
           </div>
 
