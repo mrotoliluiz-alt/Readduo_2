@@ -7,7 +7,6 @@ function CardLivro({
   autor,
   tipo,
   imagem,
-  tag,
   corTag,
   favorito = false,
 }) {
@@ -30,15 +29,6 @@ function CardLivro({
           </div>
         )}
 
-        {tag && (
-          <span
-            className={styles.tag}
-            style={{ backgroundColor: corTag }}
-          >
-            {tag}
-          </span>
-        )}
-
         <button className={styles.salvar}>
           <Bookmark
             size={18}
@@ -54,12 +44,6 @@ function CardLivro({
 
         <div className={styles.footer}>
           <span>{tipo}</span>
-
-          <Star
-            size={17}
-            fill="#facc15"
-            color="#facc15"
-          />
         </div>
       </div>
     </div>

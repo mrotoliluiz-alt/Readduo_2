@@ -55,53 +55,38 @@ function Home() {
 
         </section>
 
-          <h2>Explore novos Caminhos</h2>
+          <h2 className={styles.tituloLeitCard}>Explore novos Caminhos</h2>
 
           <div className={styles.leitCard}>
 
             <CardLivro
-            titulo="Duna"
-            autor="Frank Herbert"
+            titulo="Deserto"
+            autor="Amigo loko"
             tipo="Livro"
-            imagem="img/duna.jpg"
-            tag="Clássico"
-            corTag="#4f7cff"
             />
 
             <CardLivro
             titulo="Duna"
             autor="Frank Herbert"
             tipo="Livro"
-            imagem="img/duna.jpg"
-            tag="Clássico"
-            corTag="#4f7cff"
             />
 
             <CardLivro
             titulo="Duna"
             autor="Frank Herbert"
             tipo="Livro"
-            imagem="img/duna.jpg"
-            tag="Clássico"
-            corTag="#4f7cff"
             />
 
             <CardLivro
             titulo="Duna"
             autor="Frank Herbert"
             tipo="Livro"
-            imagem="img/duna.jpg"
-            tag="Clássico"
-            corTag="#4f7cff"
             />
 
             <CardLivro
             titulo="Duna"
             autor="Frank Herbert"
             tipo="Livro"
-            imagem="img/duna.jpg"
-            tag="Clássico"
-            corTag="#4f7cff"
             />
 
           </div>

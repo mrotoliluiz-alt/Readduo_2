@@ -63,6 +63,10 @@
     align-items: center;
 }
 
+.tituloLeitCard{
+    margin: 20px;
+}
+
 .leitCard{
     display: flex;
     flex-direction: row;

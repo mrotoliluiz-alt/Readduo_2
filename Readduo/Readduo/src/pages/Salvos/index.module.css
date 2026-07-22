@@ -1,0 +1,335 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    width: 100%;
+    min-width: 0;
+
+    padding: 30px;
+
+    background: #f8fafc;
+    color: #0f1c64;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-bottom: 30px;
+
+}
+
+.header svg {
+
+    color: #0F1C64;
+
+}
+
+.header h1 {
+
+    font-size: 3.2rem;
+
+    margin-bottom: 6px;
+
+    color: #0F1C64;
+
+}
+
+.header p {
+
+    color: #64748b;
+
+    font-size: 1.5rem;
+
+}
+
+/* ================= PESQUISA ================= */
+
+.searchArea{
+
+    margin-bottom:25px;
+
+}
+
+.searchBar{
+
+    width:450px;
+
+    height:52px;
+
+    background:white;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 18px;
+
+}
+
+.searchBar input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    font-size:1.5rem;
+
+    color:#334155;
+
+}
+
+.searchBar svg{
+
+    color:#64748b;
+
+}
+
+/* ================= TABS ================= */
+
+.tabs{
+
+    display:flex;
+
+    gap:26px;
+
+    margin-bottom:28px;
+
+    border-bottom:1px solid #dbe4ee;
+
+}
+
+.tabs button{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding-bottom:14px;
+
+    color:#64748b;
+
+    font-size:1.5rem;
+
+    transition:.2s;
+
+}
+
+.tabs button:hover{
+
+    color:#0FA6B3;
+
+}
+
+.active{
+
+    color:#0FA6B3 !important;
+
+    border-bottom:3px solid #0FA6B3;
+
+}
+
+/* ================= TOPO ================= */
+
+.topBar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+}
+
+.topBar span{
+
+    font-size:1.6rem;
+
+    color:#475569;
+
+}
+
+/* ================= BOTÕES ================= */
+
+.actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.actions button{
+
+    height:44px;
+
+    padding:0 18px;
+
+    border-radius:14px;
+
+    border:1px solid #dbe4ee;
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    color:#334155;
+
+    font-size:1.4rem;
+
+    transition:.2s;
+
+}
+
+.actions button:hover{
+
+    background:#f5fdff;
+
+    border-color:#0FA6B3;
+
+}
+
+/* ================= GRID / LISTA ================= */
+
+.viewButtons{
+
+    display:flex;
+
+    overflow:hidden;
+
+    border-radius:14px;
+
+    border:1px solid #dbe4ee;
+
+}
+
+.viewButtons button{
+
+    width:46px;
+
+    height:44px;
+
+    border:none;
+
+    border-right:1px solid #dbe4ee;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+.viewButtons button:last-child{
+
+    border-right:none;
+
+}
+
+.activeView{
+
+    background:#0FA6B3 !important;
+
+    color:white !important;
+
+}
+
+/* ================= GRID ================= */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+
+    gap:28px;
+
+    padding-bottom:30px;
+
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media(max-width:1100px){
+
+    .topBar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .actions{
+
+        width:100%;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .searchBar{
+
+        width:100%;
+
+    }
+
+    .tabs{
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

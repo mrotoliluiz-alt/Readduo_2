@@ -62,6 +62,15 @@ const livros = [
         paginas:"374 páginas",
         data:"05/05/2024",
         nota:"★★★★☆"
+    },
+     {
+        capa:"img/jogos.jpg",
+        nome:"Jogos Vorazes",
+        autor:"Suzanne Collins",
+        genero:"Aventura",
+        paginas:"374 páginas",
+        data:"05/05/2024",
+        nota:"★★★★☆"
     }
 ];
 
