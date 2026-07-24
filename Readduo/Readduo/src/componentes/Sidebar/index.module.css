@@ -11,7 +11,53 @@
     background: #ffffff;
 
     border-right: 1px solid #e2e8f0;
+
+    transition: .35s;
+    overflow: hidden;
 }
+
+.sidebarFechada{
+
+    width:80px;
+
+    min-width:80px;
+
+    padding:24px 10px;
+
+}
+
+.toggle{
+
+    width:42px;
+    height:42px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+
+    cursor:pointer;
+
+    margin-bottom:24px;
+
+    transition:.25s;
+
+}
+
+.toggle:hover{
+
+    background:#eefcff;
+
+    color:#0FA6B3;
+
+}
+
+
 
 
 .logo {
@@ -47,6 +93,12 @@
     height: 100%;
 
     object-fit: cover;
+}
+
+.sidebarFechada .logo{
+
+    justify-content:center;
+
 }
 
 
@@ -114,81 +166,11 @@
     transition: 0.2s ease;
 }
 
+.sidebarFechada .menu,
+.sidebarFechada .menuAtivo{
 
-.missaoCard {
-    margin-top: auto;
+    justify-content:center;
 
-    padding: 24px 18px;
+    padding:14px;
 
-    background: #eefcff;
-
-    border: 1px solid #cceef2;
-
-    border-radius: 20px;
-
-    text-align: center;
 }
-
-.missaoIcon {
-    width: 70px;
-    height: 70px;
-
-    margin: 0 auto 16px;
-
-    border-radius: 18px;
-
-    background: linear-gradient(
-        135deg,
-        #d8f7fb,
-        #c6e6ff
-    );
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-size: 28px;
-}
-
-.missaoCard h3 {
-    font-size: 18px;
-    font-weight: 700;
-
-    color: #1e293b;
-
-    margin-bottom: 8px;
-}
-
-.missaoCard p {
-    font-size: 14px;
-
-    color: #64748b;
-
-    line-height: 1.5;
-
-    margin-bottom: 18px;
-}
-
-.missaoCard button {
-    width: 100%;
-    height: 44px;
-
-    border: none;
-    border-radius: 12px;
-
-    background: #0fa6b3;
-
-    color: white;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.2s ease;
-}
-
-.missaoCard button:hover {
-    background: #0c95a1;
-}
-

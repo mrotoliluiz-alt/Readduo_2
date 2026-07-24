@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
 import styles from "./index.module.css";
 import logo from "../../assets/Group 50.svg";
 import {
@@ -7,25 +8,36 @@ import {
   Search,
   History,
   PenTool,
-  User
+  User,
+  PanelLeftOpen,
+  PanelLeftClose
 } from "lucide-react";
-import { useState } from "react";
+
 
 
 function Sidebar() {
 
   const navigate = useNavigate();
   const location = useLocation();
+  const [fechada, setFechada] = useState(false);
 
   return (
-    <aside className={styles.sidebar}>
+    <aside className={`${styles.sidebar} ${
+        fechada ? styles.sidebarFechada : ""
+    }`}>
+
+    <button
+    className={styles.toggle}
+    onClick={() => setFechada(!fechada)}>
+    {fechada ? (<PanelLeftOpen size={20} />) : (<PanelLeftClose size={20} />)}
+    </button>
 
       <div className={styles.logo}>
         <div className={styles.logoIcon}>
             <img src={logo} alt="logo" />
         </div>
 
-        <h2>Readduo</h2>
+        {!fechada && <h2>Readduo</h2>}
       </div>
 
       <nav className={styles.nav}>
@@ -39,7 +51,7 @@ function Sidebar() {
         onClick={() => navigate("/home")}
     >
         <House></House>
-        <span>Início</span>
+        {!fechada && <span>Início</span>}
     </button>
 
     <button
@@ -51,7 +63,7 @@ function Sidebar() {
         onClick={() => navigate("/oficina")}
     >
         <PenTool />
-        <span>Oficina</span>
+        {!fechada && <span>Oficina</span>}
     </button>
 
     <button
@@ -63,7 +75,7 @@ function Sidebar() {
         onClick={() => navigate("/Pesquisa")}
     >
         <Search></Search>
-        <span>Pesquisa</span>
+        {!fechada && <span>Pesquisa</span>}
     </button>
 
     <button
@@ -75,7 +87,7 @@ function Sidebar() {
         onClick={() => navigate("/Historico")}
     >
         <History />
-        <span>Histórico</span>
+        {!fechada && <span>Histórico</span>}
     </button>
 
      <button
@@ -87,7 +99,7 @@ function Sidebar() {
         onClick={() => navigate("/Salvos")}
     >
         < BookOpen />
-        <span>Salvos</span>
+       {!fechada && <span>Salvos</span>}
     </button>
 
     <button
@@ -99,7 +111,7 @@ function Sidebar() {
         onClick={() => navigate("/Perfil")}
     >
         < User />
-        <span>Perfil</span>
+        {!fechada && <span>Perfil</span>}
     </button>
 
 </nav>
