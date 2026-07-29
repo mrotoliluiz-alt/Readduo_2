@@ -9,8 +9,10 @@ import {
   History,
   PenTool,
   User,
-  PanelLeftOpen,
-  PanelLeftClose
+  ArrowRight,
+  ArrowLeft,
+  MessageSquareText,
+  Bolt
 } from "lucide-react";
 
 
@@ -29,7 +31,7 @@ function Sidebar() {
     <button
     className={styles.toggle}
     onClick={() => setFechada(!fechada)}>
-    {fechada ? (<PanelLeftOpen size={20} />) : (<PanelLeftClose size={20} />)}
+    {fechada ? (<ArrowLeft size={16} strokeWidth={2.5}  />) : (<ArrowLeft size={20} />)}
     </button>
 
       <div className={styles.logo}>
@@ -112,6 +114,30 @@ function Sidebar() {
     >
         < User />
         {!fechada && <span>Perfil</span>}
+    </button>
+
+    <button
+        className={
+            location.pathname === "/Chat"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Chat")}
+    >
+        < MessageSquareText />
+        {!fechada && <span>Chat</span>}
+    </button>
+
+    <button
+        className={
+            location.pathname === "/Config"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Config")}
+    >
+        < Bolt />
+        {!fechada && <span>Configurações</span>}
     </button>
 
 </nav>

@@ -10,5 +10,5 @@
     display: block;
     min-width: 0;
     background: #f8fafc;
-    overflow-y: auto;
+    /*overflow-y: auto;*/
 }

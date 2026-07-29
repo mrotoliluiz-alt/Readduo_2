@@ -13,7 +13,9 @@
     border-right: 1px solid #e2e8f0;
 
     transition: .35s;
-    overflow: hidden;
+    
+
+    position: relative;
 }
 
 .sidebarFechada{
@@ -28,13 +30,15 @@
 
 .toggle{
 
-    width:42px;
-    height:42px;
+    width:32px;
+    height:32px;
+    
 
     border:none;
     border-radius:12px;
 
     background:#f8fafc;
+    color: #000;
 
     display:flex;
     justify-content:center;
@@ -47,6 +51,10 @@
 
     transition:.25s;
 
+    position: absolute;
+    top: 20px;
+    right: -18px;
+
 }
 
 .toggle:hover{
@@ -56,6 +64,7 @@
     color:#0FA6B3;
 
 }
+
 
 
 
