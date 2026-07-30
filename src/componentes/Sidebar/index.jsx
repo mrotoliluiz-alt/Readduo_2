@@ -31,7 +31,7 @@ function Sidebar() {
     <button
     className={styles.toggle}
     onClick={() => setFechada(!fechada)}>
-    {fechada ? (<ArrowLeft size={16} strokeWidth={2.5}  />) : (<ArrowLeft size={20} />)}
+    {fechada ? (<ArrowRight size={16} strokeWidth={2.5}  />) : (<  ArrowLeft size={20} />)}
     </button>
 
       <div className={styles.logo}>

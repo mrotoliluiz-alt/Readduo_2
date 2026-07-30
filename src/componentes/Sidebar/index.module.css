@@ -30,12 +30,13 @@
 
 .toggle{
 
-    width:32px;
-    height:32px;
+    width:52px;
+    height:52px;
     
 
     border:none;
-    border-radius:12px;
+    border-radius:52px;
+    border-right: 1px solid #e2e8f0;
 
     background:#f8fafc;
     color: #000;
@@ -182,4 +183,8 @@
 
     padding:14px;
 
+}
+
+.sidebarFechada .toggle{
+    right: -30px;
 }
