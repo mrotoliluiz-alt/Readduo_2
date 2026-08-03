@@ -2,6 +2,7 @@ import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
+import CardLivro from "../../componentes/cardLivro";
 import {
   Flame,
   BookText,
@@ -86,8 +87,7 @@ function Landing() {
                     
                 </div>
 
-                <h3 className={styles.livraria}> <LibraryBig color='#0FA6B3' width={38} height={33}></LibraryBig> Conheça alguns de nossos livros </h3>
-
+                
                 
 
                 
@@ -99,6 +99,43 @@ function Landing() {
 
             </div>
 
+            </div>
+
+            <div className={styles.baixo}>
+
+                <h3 className={styles.livraria}> <LibraryBig color='#0FA6B3' width={38} height={33}></LibraryBig> Conheça alguns de nossos livros </h3>
+
+                <div className={styles.leitCard}>
+                    <CardLivro
+            titulo="Deserto"
+            autor="Amigo loko"
+            tipo="Livro"
+            />
+
+            <CardLivro
+            titulo="Cuna"
+            autor=" Herbert Frank "
+            tipo="Livro"
+            />
+
+            <CardLivro
+            titulo="Harry Poter"
+            autor="Minha varinha magica"
+            tipo="Livro"
+            />
+
+            <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+            />
+
+            <CardLivro
+            titulo="O Peso das Palavras Cura a Alma"
+            autor="Sthefany Oliveira"
+            tipo="Livro"
+            />
+                </div>
             </div>
 
             

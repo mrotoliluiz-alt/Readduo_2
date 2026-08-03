@@ -1,0 +1,959 @@
+.container{
+    display:flex;
+    flex-direction:column;
+
+    width:100%;
+    flex:1;
+
+    padding:30px;
+
+    background:#f8fafc;
+
+    color:#0F1C64;
+}
+
+/* =======================================
+HEADER
+======================================= */
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.titulo{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+}
+
+.titulo h1{
+
+    font-size:3rem;
+    font-weight:700;
+
+}
+
+/* =======================================
+LAYOUT
+======================================= */
+
+.layout{
+
+    display:grid;
+
+    grid-template-columns:2.6fr 1fr;
+
+    gap:28px;
+
+    align-items:start;
+
+}
+
+.left{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+.right{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+/* =======================================
+CARD PERFIL
+======================================= */
+
+.profileCard{
+
+    background:white;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:25px;
+
+}
+
+.avatar{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    border:4px solid #dbe4ee;
+
+}
+
+.avatar svg{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.profileInfo{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.nomeLinha{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:6px;
+
+}
+
+.nomeLinha h2{
+
+    font-size:2.6rem;
+    font-weight:700;
+
+}
+
+.profileInfo>p:first-of-type{
+
+    color:#64748b;
+
+    margin-bottom:18px;
+
+}
+
+/* =======================================
+BARRA XP
+======================================= */
+
+.progress{
+
+    width:100%;
+    height:10px;
+
+    background:#e2e8f0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    margin-bottom:10px;
+
+}
+
+.progressFill{
+
+    width:70%;
+
+    height:100%;
+
+    background:#0FA6B3;
+
+    border-radius:30px;
+
+}
+
+.progress + span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+/* =======================================
+BIO
+======================================= */
+
+.bio{
+
+    margin-top:20px;
+
+    color:#475569;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* =======================================
+INFORMAÇÕES
+======================================= */
+
+.infoLinha{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:22px;
+
+}
+
+.infoLinha span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+/* =======================================
+BOTÃO
+======================================= */
+
+.editar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    height:48px;
+
+    padding:0 20px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#0FA6B3;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.editar:hover{
+
+    background:#0d95a1;
+
+}
+
+/* =======================================
+TABS
+======================================= */
+
+.tabs{
+
+    display:flex;
+
+    gap:30px;
+
+    border-bottom:1px solid #dbe4ee;
+
+    padding-bottom:14px;
+
+}
+
+.tabs button{
+
+    background:none;
+
+    border:none;
+
+    color:#64748b;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    font-weight:500;
+
+    transition:.25s;
+
+}
+
+.tabs button:hover{
+
+    color:#0FA6B3;
+
+}
+
+.active{
+
+    color:#0FA6B3 !important;
+
+    position:relative;
+
+    font-weight:700 !important;
+
+}
+
+.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-15px;
+
+    width:100%;
+
+    height:3px;
+
+    border-radius:20px;
+
+    background:#0FA6B3;
+
+}
+
+/* =======================================
+GRID PRINCIPAL
+======================================= */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:1.4fr 1fr;
+
+    gap:24px;
+
+}
+
+/* =======================================
+CARD PADRÃO
+======================================= */
+
+.card{
+
+    background:white;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:22px;
+
+    padding:24px;
+
+}
+
+.card h3{
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+/* =======================================
+ATIVIDADE
+======================================= */
+
+.activity{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:16px 0;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+.activity:last-child{
+
+    border-bottom:none;
+
+}
+
+.activity div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.activity strong{
+
+    font-size:15px;
+
+    color:#0F1C64;
+
+}
+
+.activity span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.activity small{
+
+    color:#94a3b8;
+
+    white-space:nowrap;
+
+}
+
+.verTudo{
+
+    margin-top:24px;
+
+    width:100%;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#eefcff;
+
+    color:#0FA6B3;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.verTudo:hover{
+
+    background:#d8f7fb;
+
+}
+
+/* ======================================================
+GÊNEROS MAIS LIDOS
+====================================================== */
+
+.grafico{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:25px 0;
+
+}
+
+.circle{
+
+    width:180px;
+    height:180px;
+
+    border-radius:50%;
+
+    background:
+    conic-gradient(
+        #7c3aed 0% 45%,
+        #2563eb 45% 65%,
+        #22c55e 65% 80%,
+        #ec4899 80% 90%,
+        #94a3b8 90% 100%
+    );
+
+    position:relative;
+
+}
+
+.circle::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:28px;
+
+    border-radius:50%;
+
+    background:white;
+
+}
+
+.generos{
+
+    list-style:none;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:14px;
+
+    padding:0;
+
+    margin-top:25px;
+
+}
+
+.generos li{
+
+    color:#475569;
+
+    font-size:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+/* ======================================================
+SEQUÊNCIA
+====================================================== */
+
+.sequencia{
+
+    background:white;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:22px;
+
+    padding:24px;
+
+}
+
+.seqTitulo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:28px;
+
+}
+
+.seqTitulo h2{
+
+    flex:1;
+
+    font-size:2rem;
+
+}
+
+.seqTitulo span{
+
+    color:#fb923c;
+
+    font-weight:700;
+
+    font-size:18px;
+
+}
+
+.dias{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:14px;
+
+}
+
+.dia{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    flex:1;
+
+}
+
+.bolinha{
+
+    width:46px;
+    height:46px;
+
+    border-radius:50%;
+
+    background:#22c55e;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+    transition:.25s;
+
+}
+
+.bolinha:hover{
+
+    transform:scale(1.08);
+
+}
+
+.dia small{
+
+    color:#64748b;
+
+    font-size:13px;
+
+}
+
+/* ======================================================
+GRID ESTATÍSTICAS
+====================================================== */
+
+.statsGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.statCard{
+
+    background:white;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    transition:.25s;
+
+}
+
+.statCard:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.statCard small{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.statCard h3{
+
+    font-size:30px;
+
+    color:#0F1C64;
+
+}
+
+.statCard span{
+
+    color:#94a3b8;
+
+    font-size:13px;
+
+}
+
+/* ======================================================
+SIDE CARD
+====================================================== */
+
+.sideCard{
+
+    background:white;
+
+    border:1px solid #dbe4ee;
+
+    border-radius:20px;
+
+    padding:22px;
+
+}
+
+.cardHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+}
+
+.cardHeader h3{
+
+    font-size:20px;
+
+}
+
+.cardHeader button{
+
+    border:none;
+
+    background:none;
+
+    color:#0FA6B3;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+/* ======================================================
+CONQUISTAS / AMIGOS
+====================================================== */
+
+.item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+.item:last-child{
+
+    border:none;
+
+}
+
+.item > div:not(.avatarMini){
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.item strong{
+
+    color:#0F1C64;
+
+}
+
+.item span{
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+.item small{
+
+    color:#94a3b8;
+
+    white-space:nowrap;
+
+}
+
+/* ======================================================
+AVATAR AMIGOS
+====================================================== */
+
+.avatarMini{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius: 46px;
+
+    background:linear-gradient(
+        135deg,
+        #0FA6B3,
+        #4f7cff
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+/* ======================================================
+RESPONSIVO
+====================================================== */
+
+@media(max-width:1300px){
+
+    .layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .right{
+
+        order:-1;
+
+    }
+
+}
+
+@media(max-width:950px){
+
+    .profileCard{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    .profileInfo{
+
+        width:100%;
+
+        align-items:center;
+
+    }
+
+    .nomeLinha{
+
+        justify-content:center;
+
+    }
+
+    .infoLinha{
+
+        justify-content:center;
+
+    }
+
+    .editar{
+
+        width:100%;
+
+        justify-content:center;
+
+        margin-top:25px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .statsGrid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dias{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .tabs{
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+        gap:18px;
+
+        padding-bottom:20px;
+
+    }
+
+}
