@@ -12,16 +12,16 @@ import {
   ArrowRight,
   ArrowLeft,
   MessageSquareText,
-  Bolt
+  Bolt,
+  ClipboardList
 } from "lucide-react";
 
 
 
-function Sidebar() {
+function Sidebar({ fechada, setFechada }) {
 
   const navigate = useNavigate();
   const location = useLocation();
-  const [fechada, setFechada] = useState(false);
 
   return (
     <aside className={`${styles.sidebar} ${
@@ -138,6 +138,18 @@ function Sidebar() {
     >
         < Bolt />
         {!fechada && <span>Configurações</span>}
+    </button>
+
+    <button
+        className={
+            location.pathname === "/Missoes"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Missoes")}
+    >
+        < ClipboardList />
+        {!fechada && <span>Missões</span>}
     </button>
 
 </nav>

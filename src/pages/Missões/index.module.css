@@ -1,0 +1,375 @@
+.container{
+    width:100%;
+    min-height:100vh;
+    background:#fafafa;
+
+    padding:32px;
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.titulo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.titulo svg{
+    color:#0FA6B3;
+}
+
+.titulo h1{
+    font-size:34px;
+    font-weight:700;
+    color:#0F172A;
+}
+
+.header p{
+    color:#64748B;
+    font-size:16px;
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.card{
+    background:#fff;
+    border:2px solid;
+    border-radius:22px;
+    padding:24px;
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+}
+
+.cardIcon{
+    width:58px;
+    height:58px;
+    border-radius:18px;
+    background:#F8FAFC;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card h2{
+    font-size:32px;
+    color:#0F172A;
+}
+
+.card span{
+    display:block;
+    font-weight:600;
+    color:#334155;
+}
+
+.card small{
+    color:#64748B;
+}
+
+/* ================= TABS ================= */
+
+.tabs{
+    display:flex;
+    gap:28px;
+    border-bottom:1px solid #E2E8F0;
+}
+
+.tabs button{
+    background:none;
+    border:none;
+    padding:14px 0;
+
+    font-size:16px;
+    cursor:pointer;
+
+    color:#64748B;
+    transition:.25s;
+}
+
+.tabs button:hover{
+    color:#0FA6B3;
+}
+
+.active{
+    color:#0FA6B3!important;
+    border-bottom:3px solid #0FA6B3;
+}
+
+/* ================= LAYOUT ================= */
+
+.layout{
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:28px;
+}
+
+/* ================= TRILHA ================= */
+
+.trilha{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:24px;
+
+    padding:20px 0;
+}
+
+.missao{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+}
+
+.circulo{
+    width:92px;
+    height:92px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    transition:.25s;
+}
+
+.circulo:hover{
+    transform:scale(1.05);
+}
+
+.atual{
+    background:#0FA6B3;
+}
+
+.concluida{
+    background:#22C55E;
+}
+
+.bloqueada{
+    background:#E2E8F0;
+    color:#64748B;
+}
+
+.bonus{
+    background:#8B5CF6;
+}
+
+.linha{
+    width:5px;
+    height:70px;
+    background:#CBD5E1;
+    border-radius:30px;
+}
+
+.info{
+    margin-top:15px;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.badge{
+    background:#DBF4FF;
+    color:#0284C7;
+
+    padding:6px 16px;
+    border-radius:20px;
+
+    font-size:13px;
+    font-weight:700;
+
+    align-self:center;
+}
+
+.info h3{
+    font-size:22px;
+    color:#0F172A;
+}
+
+.info p{
+    color:#64748B;
+}
+
+.info strong{
+    color:#16A34A;
+    font-size:18px;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.sideCard{
+    background:#fff;
+    border:1px solid #E2E8F0;
+    border-radius:22px;
+    padding:24px;
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.sideTitulo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.sideTitulo svg{
+    color:#0FA6B3;
+}
+
+.sideCard h2{
+    font-size:42px;
+    text-align:center;
+    color:#0F172A;
+}
+
+.sideCard h3{
+    color:#0F172A;
+}
+
+.sideCard h4{
+    text-align:center;
+    font-size:22px;
+    color:#0F172A;
+}
+
+.sideCard p{
+    color:#64748B;
+    text-align:center;
+}
+
+.sideCard span{
+    text-align:center;
+    color:#64748B;
+    font-size:14px;
+}
+
+/* ================= PROGRESS ================= */
+
+.progress{
+    width:100%;
+    height:10px;
+
+    background:#E2E8F0;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.progressFill{
+    width:40%;
+    height:100%;
+    background:#0FA6B3;
+    border-radius:30px;
+}
+
+/* ================= LEVEL ================= */
+
+.levelCircle{
+    width:100px;
+    height:100px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#0FA6B3;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-size:38px;
+    font-weight:700;
+}
+
+/* ================= BONUS ================= */
+
+.bonus{
+    background:#EEF9FF;
+    border:1px solid #BEE3F8;
+    border-radius:22px;
+    padding:22px;
+
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.bonus svg{
+    color:#0FA6B3;
+}
+
+.bonus strong{
+    color:#0F172A;
+    font-size:18px;
+}
+
+.bonus p{
+    color:#64748B;
+    line-height:1.6;
+}
+
+.bonus button{
+    height:46px;
+
+    border:none;
+    border-radius:14px;
+
+    background:#0FA6B3;
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.25s;
+}
+
+.bonus button:hover{
+    background:#0D94A0;
+}

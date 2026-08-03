@@ -12,7 +12,7 @@ import Historico from "./pages/Historico";
 import Oficina from "./pages/Oficina";
 import Perfil from "./pages/Perfil";
 import Pesquisa from "./pages/Pesquisa";
-
+import Missoes from "./pages/Missões";
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
         <Route path="/Oficina" element={<Oficina />} />
         <Route path="/Perfil" element={<Perfil />} />
         <Route path="/Pesquisa" element={<Pesquisa />} />
+        <Route path="/Missoes" element={<Missoes/>}/>
         </Route>
     </Routes>
     
