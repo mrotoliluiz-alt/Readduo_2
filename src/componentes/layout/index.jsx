@@ -4,12 +4,10 @@ import styles from "./index.module.css";
 import { useState } from "react";
 
 function Layout() {
-
   const [fechada, setFechada] = useState(false);
 
   return (
     <div className={styles.layout}>
-
       <Sidebar
         fechada={fechada}
         setFechada={setFechada}
@@ -22,7 +20,6 @@ function Layout() {
       >
         <Outlet />
       </main>
-
     </div>
   );
 }

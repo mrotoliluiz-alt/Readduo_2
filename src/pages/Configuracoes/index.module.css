@@ -376,8 +376,8 @@
 }
 
 .temaAtivo {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px var(--blue-100);
+   border-color:#0FA6B3;
+  box-shadow:0 0 0 3px rgba(15,166,179,.18);
 }
 
 .temaAtivo span {

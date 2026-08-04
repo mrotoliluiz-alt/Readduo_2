@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import styles from "./index.css";
+import "./index.css"; 
 
 const ThemeContext = createContext(null);
 const STORAGE_KEY = "readduo-theme";
@@ -10,27 +10,30 @@ export function ThemeProvider({ children }) {
   );
 
   useEffect(() => {
-    const root = document.documentElement;
 
-    const aplicarEscuro = (ativo) => {
-      root.classList.toggle("dark", ativo);
-    };
+    const root=document.documentElement;
 
-    if (theme === "system") {
-      const media = window.matchMedia("(prefers-color-scheme: dark)");
-      aplicarEscuro(media.matches);
-
-      const listener = (e) => aplicarEscuro(e.matches);
-      media.addEventListener("change", listener);
-      return () => media.removeEventListener("change", listener);
+    const aplicarTema=(escuro)=>{
+        root.classList.toggle("dark",escuro);
     }
 
-    aplicarEscuro(theme === "dark");
-  }, [theme]);
+    if(theme==="system"){
 
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, theme);
-  }, [theme]);
+        const media=window.matchMedia("(prefers-color-scheme: dark)");
+
+        aplicarTema(media.matches);
+
+        const listener=(e)=>aplicarTema(e.matches);
+
+        media.addEventListener("change",listener);
+
+        return ()=>media.removeEventListener("change",listener);
+
+    }
+
+    aplicarTema(theme==="dark");
+
+},[theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

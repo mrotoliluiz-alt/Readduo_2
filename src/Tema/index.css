@@ -49,3 +49,11 @@
 
   --gradient-profile: linear-gradient(135deg, #1c2340 0%, #182241 100%);
 }
+
+html,
+body,
+#root{
+    background: var(--bg-page);
+    color: var(--text-primary);
+    transition: .25s;
+}
