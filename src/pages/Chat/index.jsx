@@ -33,7 +33,6 @@ const conversas = [
 function Chat() {
   return (
     <div className={styles.container}>
-      {/* Cabeçalho */}
 
       <div className={styles.header}>
         <div>
@@ -111,7 +110,6 @@ function Chat() {
           )}
         </aside>
 
-        {/* Chat */}
 
         <main className={styles.chat}>
           <div className={styles.chatVazio}>
