@@ -1,8 +1,8 @@
 import styles from "./index.module.css";
-import { useTheme } from "../../Tema/tema.jsx"; // ajuste o caminho conforme sua pasta
 
 import {
   Settings,
+  User,
   BadgeCheck,
   Bookmark,
   Feather,
@@ -13,6 +13,8 @@ import {
   Monitor,
   Lock,
   Smartphone,
+  Bell,
+  Shield,
   ChevronRight,
   Pencil,
 } from "lucide-react";
@@ -21,174 +23,300 @@ const estatisticas = [
   {
     titulo: "Obras salvas",
     valor: "23",
-    icone: <Bookmark size={24} />,
-    classe: styles.azul,
+    extra: "+4 este mês",
+    icone: <Bookmark color="#61A6FA" size={20} />,
   },
   {
     titulo: "Obras escritas",
     valor: "7",
-    icone: <Feather size={24} />,
-    classe: styles.verde,
+    extra: "+1 este mês",
+    icone: <Feather color="#4ADE80" size={20} />,
   },
   {
     titulo: "Sequência",
     valor: "8 dias",
-    icone: <Flame size={24} />,
-    classe: styles.laranja,
+    extra: "Melhor: 16 dias",
+    icone: <Flame color="#FB923C" size={20} />,
   },
   {
     titulo: "XP acumulado",
     valor: "24.850",
-    icone: <Star size={24} />,
-    classe: styles.amarelo,
+    extra: "Top 18%",
+    icone: <Star color="#FACC15" size={20} />,
   },
 ];
 
-const OPCOES_TEMA = [
-  { nome: "Claro", valor: "light", icone: <Sun size={32} /> },
-  { nome: "Escuro", valor: "dark", icone: <Moon size={32} /> },
-  { nome: "Sistema", valor: "system", icone: <Monitor size={32} /> },
+const aparencia = [
+  {
+    titulo: "Modo Claro",
+    descricao: "Tema padrão do Readduo",
+    icone: <Sun size={26} />,
+  },
+  {
+    titulo: "Modo Escuro",
+    descricao: "Ideal para leituras noturnas",
+    icone: <Moon size={26} />,
+  },
+  {
+    titulo: "Sistema",
+    descricao: "Segue o tema do dispositivo",
+    icone: <Monitor size={26} />,
+  },
 ];
 
-const acoes = [
+const seguranca = [
   {
     titulo: "Alterar senha",
     descricao: "Atualize sua senha de acesso.",
-    icone: <Lock size={22} />,
+    icone: <Lock size={20} />,
   },
   {
     titulo: "Gerenciar dispositivos",
-    descricao: "Veja e gerencie seus dispositivos conectados.",
-    icone: <Smartphone size={22} />,
+    descricao: "Veja onde sua conta está conectada.",
+    icone: <Smartphone size={20} />,
+  },
+  {
+    titulo: "Privacidade",
+    descricao: "Controle quem pode visualizar seu perfil.",
+    icone: <Shield size={20} />,
+  },
+  {
+    titulo: "Notificações",
+    descricao: "Configure avisos e lembretes.",
+    icone: <Bell size={20} />,
   },
 ];
 
 function Configuracoes() {
-  const { theme, setTheme } = useTheme();
-
   return (
     <div className={styles.container}>
-      {/* HEADER */}
+
+      {/* Cabeçalho */}
 
       <div className={styles.header}>
         <div className={styles.titulo}>
           <Settings />
-
-          <div>
-            <h1>Configurações</h1>
-
-            <p>Personalize sua experiência e gerencie sua conta.</p>
-          </div>
+          <h1>Configurações</h1>
         </div>
+
+        <p>
+          Gerencie sua conta, personalize sua experiência e ajuste suas preferências.
+        </p>
       </div>
 
-      <section className={styles.profileCard}>
-        <div className={styles.esquerda}>
-          <div className={styles.avatar}>
-            <img src="https://i.pravatar.cc/300?img=5" alt="" />
+      {/* Layout */}
 
-            <button>
-              <Pencil size={15} />
-            </button>
-          </div>
+      <div className={styles.layout}>
 
-          <div className={styles.info}>
-            <div className={styles.nome}>
-              <h2>Luna Silveira</h2>
+        {/* Coluna Esquerda */}
 
-              <span>
-                <BadgeCheck size={15} />
-                Verificada
-              </span>
+        <div className={styles.left}>
+
+          {/* Perfil */}
+
+          <section className={styles.profileCard}>
+
+            <div className={styles.avatar}>
+              <img
+                src="https://i.pravatar.cc/200?img=32"
+                alt=""
+              />
             </div>
 
-            <p>viagem.literaria@gmail.com</p>
+            <div className={styles.profileInfo}>
 
-            <small>Membro desde 15/04/2024 • Brasil</small>
+              <div className={styles.nomeLinha}>
+                <h2>Luna Silveira</h2>
 
-            <button className={styles.editar}>
-              <Pencil size={18} />
-              Editar perfil
-            </button>
-          </div>
-        </div>
+                <BadgeCheck color="#4F7CFF" />
+              </div>
 
-        <div className={styles.nivel}>
-          <div className={styles.estrela}>
-            <Star size={28} />
-          </div>
+              <p>Nível 12 • Viajante das Histórias</p>
 
-          <h2>12</h2>
+              <span>viagem.literaria@gmail.com</span>
 
-          <span>Nível</span>
-        </div>
-      </section>
+              <small>Membro desde 15/04/2024 • Brasil</small>
 
-      {/* ESTATÍSTICAS */}
-
-      <section className={styles.stats}>
-        {estatisticas.map((item, index) => (
-          <div key={index} className={`${styles.statCard} ${item.classe}`}>
-            <div className={styles.icon}>{item.icone}</div>
-
-            <h2>{item.valor}</h2>
-
-            <span>{item.titulo}</span>
-          </div>
-        ))}
-      </section>
-
-      {/* APARÊNCIA */}
-
-      <section className={styles.card}>
-        <h2>Aparência</h2>
-
-        <p>Escolha como o Readduo aparece para você.</p>
-
-        <div className={styles.temas}>
-          {OPCOES_TEMA.map((opcao) => {
-            const ativo = theme === opcao.valor;
-
-            return (
-              <button
-                key={opcao.valor}
-                className={`${styles.tema} ${ativo ? styles.temaAtivo : ""}`}
-                onClick={() => setTheme(opcao.valor)}
-              >
-                <div className={styles.temaIcone}>{opcao.icone}</div>
-
-                <span>{opcao.nome}</span>
-
-                {ativo && <div className={styles.check}>✓</div>}
+              <button className={styles.editar}>
+                <Pencil size={18} />
+                Editar Perfil
               </button>
-            );
-          })}
-        </div>
-      </section>
 
-      {/* AÇÕES */}
+            </div>
 
-      <section className={styles.card}>
-        <h2>Ações rápidas</h2>
+          </section>
 
-        <div className={styles.acoes}>
-          {acoes.map((item, index) => (
-            <button key={index} className={styles.acao}>
-              <div className={styles.acaoEsquerda}>
-                <div className={styles.acaoIcone}>{item.icone}</div>
+          {/* Estatísticas */}
 
-                <div>
+          <section className={styles.stats}>
+
+          {estatisticas.map((item, index) => (
+
+            <div
+              key={index}
+              className={`${styles.statCard} ${item.classe}`}
+            >
+
+              <div className={styles.icon}>
+                {item.icone}
+              </div>
+
+              <h2>{item.valor}</h2>
+
+              <span>{item.titulo}</span>
+
+            </div>
+
+          ))}
+
+        </section>
+                    {/* Aparência */}
+
+          <section className={styles.card}>
+
+            <div className={styles.cardHeader}>
+              <h3>Aparência</h3>
+
+              <p>Escolha como deseja visualizar o Readduo.</p>
+            </div>
+
+            <div className={styles.temas}>
+
+              {aparencia.map((item, index) => (
+
+                <button
+                  key={index}
+                  className={styles.tema}
+                >
+
+                  <div className={styles.temaIcone}>
+                    {item.icone}
+                  </div>
+
                   <strong>{item.titulo}</strong>
 
                   <span>{item.descricao}</span>
+
+                </button>
+
+              ))}
+
+            </div>
+
+          </section>
+
+        </div>
+
+        {/* Coluna Direita */}
+
+        <div className={styles.right}>
+
+          {/* Segurança */}
+
+          <section className={styles.sideCard}>
+
+            <div className={styles.cardHeader}>
+
+              <h3>Conta e Segurança</h3>
+
+            </div>
+
+            {seguranca.map((item, index) => (
+
+              <button
+                key={index}
+                className={styles.item}
+              >
+
+                <div className={styles.itemIcon}>
+
+                  {item.icone}
+
                 </div>
+
+                <div className={styles.itemInfo}>
+
+                  <strong>{item.titulo}</strong>
+
+                  <span>{item.descricao}</span>
+
+                </div>
+
+                <ChevronRight size={18} />
+
+              </button>
+
+            ))}
+
+          </section>
+
+          {/* Sobre */}
+
+          <section className={styles.sideCard}>
+
+            <div className={styles.cardHeader}>
+
+              <h3>Sobre o Readduo</h3>
+
+            </div>
+
+            <div className={styles.sobre}>
+
+              <div className={styles.sobreItem}>
+                <User size={18} />
+                <span>Conta Premium: Não</span>
               </div>
 
+              <div className={styles.sobreItem}>
+                <Star size={18} />
+                <span>Versão 1.0.0</span>
+              </div>
+
+              <div className={styles.sobreItem}>
+                <Settings size={18} />
+                <span>Última atualização: Hoje</span>
+              </div>
+
+            </div>
+
+          </section>
+
+          {/* Atalhos */}
+
+          <section className={styles.sideCard}>
+
+            <div className={styles.cardHeader}>
+
+              <h3>Atalhos</h3>
+
+            </div>
+
+            <button className={styles.atalho}>
+              Editar Perfil
               <ChevronRight size={18} />
             </button>
-          ))}
+
+            <button className={styles.atalho}>
+              Central de Ajuda
+              <ChevronRight size={18} />
+            </button>
+
+            <button className={styles.atalho}>
+              Política de Privacidade
+              <ChevronRight size={18} />
+            </button>
+
+            <button className={styles.atalho}>
+              Termos de Uso
+              <ChevronRight size={18} />
+            </button>
+
+          </section>
+
         </div>
-      </section>
+
+      </div>
+
     </div>
   );
 }
