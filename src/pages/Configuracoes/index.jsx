@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import { useTheme } from "../../Tema/themeContext.jsx";
 
 import {
   Settings,
@@ -24,25 +25,25 @@ const estatisticas = [
     titulo: "Obras salvas",
     valor: "23",
     extra: "+4 este mês",
-    icone: <Bookmark color="#61A6FA" size={20} />,
+    icone: <Bookmark size={24} />,
   },
   {
     titulo: "Obras escritas",
     valor: "7",
     extra: "+1 este mês",
-    icone: <Feather color="#4ADE80" size={20} />,
+    icone: <Feather size={24} />,
   },
   {
     titulo: "Sequência",
     valor: "8 dias",
     extra: "Melhor: 16 dias",
-    icone: <Flame color="#FB923C" size={20} />,
+    icone: <Flame size={24} />,
   },
   {
     titulo: "XP acumulado",
     valor: "24.850",
     extra: "Top 18%",
-    icone: <Star color="#FACC15" size={20} />,
+    icone: <Star size={24} />,
   },
 ];
 
@@ -50,17 +51,20 @@ const aparencia = [
   {
     titulo: "Modo Claro",
     descricao: "Tema padrão do Readduo",
-    icone: <Sun size={26} />,
+    valor: "claro",
+    icone: <Sun size={28} />,
   },
   {
     titulo: "Modo Escuro",
     descricao: "Ideal para leituras noturnas",
-    icone: <Moon size={26} />,
+    valor: "escuro",
+    icone: <Moon size={28} />,
   },
   {
     titulo: "Sistema",
     descricao: "Segue o tema do dispositivo",
-    icone: <Monitor size={26} />,
+    valor: "sistema",
+    icone: <Monitor size={28} />,
   },
 ];
 
@@ -68,26 +72,28 @@ const seguranca = [
   {
     titulo: "Alterar senha",
     descricao: "Atualize sua senha de acesso.",
-    icone: <Lock size={20} />,
+    icone: <Lock size={22} />,
   },
   {
     titulo: "Gerenciar dispositivos",
     descricao: "Veja onde sua conta está conectada.",
-    icone: <Smartphone size={20} />,
+    icone: <Smartphone size={22} />,
   },
   {
     titulo: "Privacidade",
     descricao: "Controle quem pode visualizar seu perfil.",
-    icone: <Shield size={20} />,
+    icone: <Shield size={22} />,
   },
   {
     titulo: "Notificações",
     descricao: "Configure avisos e lembretes.",
-    icone: <Bell size={20} />,
+    icone: <Bell size={22} />,
   },
 ];
 
 function Configuracoes() {
+  const { tema, setTema } = useTheme();
+
   return (
     <div className={styles.container}>
 
@@ -100,7 +106,8 @@ function Configuracoes() {
         </div>
 
         <p>
-          Gerencie sua conta, personalize sua experiência e ajuste suas preferências.
+          Gerencie sua conta, personalize sua experiência e ajuste suas
+          preferências.
         </p>
       </div>
 
@@ -119,7 +126,7 @@ function Configuracoes() {
             <div className={styles.avatar}>
               <img
                 src="https://i.pravatar.cc/200?img=32"
-                alt=""
+                alt="Avatar de Luna Silveira"
               />
             </div>
 
@@ -135,7 +142,9 @@ function Configuracoes() {
 
               <span>viagem.literaria@gmail.com</span>
 
-              <small>Membro desde 15/04/2024 • Brasil</small>
+              <small>
+                Membro desde 15/04/2024 • Brasil
+              </small>
 
               <button className={styles.editar}>
                 <Pencil size={18} />
@@ -150,56 +159,72 @@ function Configuracoes() {
 
           <section className={styles.stats}>
 
-          {estatisticas.map((item, index) => (
+            {estatisticas.map((item, index) => (
 
-            <div
-              key={index}
-              className={`${styles.statCard} ${item.classe}`}
-            >
+              <div
+                key={index}
+                className={styles.statCard}
+              >
 
-              <div className={styles.icon}>
-                {item.icone}
+                <div className={styles.icon}>
+                  {item.icone}
+                </div>
+
+                <h2>{item.valor}</h2>
+
+                <span>{item.titulo}</span>
+
+                <small>{item.extra}</small>
+
               </div>
 
-              <h2>{item.valor}</h2>
+            ))}
 
-              <span>{item.titulo}</span>
+          </section>
 
-            </div>
-
-          ))}
-
-        </section>
-                    {/* Aparência */}
+          {/* Aparência */}
 
           <section className={styles.card}>
 
             <div className={styles.cardHeader}>
               <h3>Aparência</h3>
 
-              <p>Escolha como deseja visualizar o Readduo.</p>
+              <p>
+                Escolha como deseja visualizar o Readduo.
+              </p>
             </div>
 
             <div className={styles.temas}>
 
-              {aparencia.map((item, index) => (
+              {aparencia.map((item) => {
 
-                <button
-                  key={index}
-                  className={styles.tema}
-                >
+                const ativo = tema === item.valor;
 
-                  <div className={styles.temaIcone}>
-                    {item.icone}
-                  </div>
+                return (
+                  <button
+                    key={item.valor}
+                    className={`${styles.tema} ${
+                      ativo ? styles.temaAtivo : ""
+                    }`}
+                    onClick={() => setTema(item.valor)}
+                  >
 
-                  <strong>{item.titulo}</strong>
+                    <div className={styles.temaIcone}>
+                      {item.icone}
+                    </div>
 
-                  <span>{item.descricao}</span>
+                    <strong>
+                      {item.titulo}
+                    </strong>
 
-                </button>
+                    <span>
+                      {item.descricao}
+                    </span>
 
-              ))}
+                  </button>
+                );
+
+              })}
 
             </div>
 
@@ -216,9 +241,7 @@ function Configuracoes() {
           <section className={styles.sideCard}>
 
             <div className={styles.cardHeader}>
-
               <h3>Conta e Segurança</h3>
-
             </div>
 
             {seguranca.map((item, index) => (
@@ -229,16 +252,18 @@ function Configuracoes() {
               >
 
                 <div className={styles.itemIcon}>
-
                   {item.icone}
-
                 </div>
 
                 <div className={styles.itemInfo}>
 
-                  <strong>{item.titulo}</strong>
+                  <strong>
+                    {item.titulo}
+                  </strong>
 
-                  <span>{item.descricao}</span>
+                  <span>
+                    {item.descricao}
+                  </span>
 
                 </div>
 
@@ -255,9 +280,7 @@ function Configuracoes() {
           <section className={styles.sideCard}>
 
             <div className={styles.cardHeader}>
-
               <h3>Sobre o Readduo</h3>
-
             </div>
 
             <div className={styles.sobre}>
@@ -286,9 +309,7 @@ function Configuracoes() {
           <section className={styles.sideCard}>
 
             <div className={styles.cardHeader}>
-
               <h3>Atalhos</h3>
-
             </div>
 
             <button className={styles.atalho}>

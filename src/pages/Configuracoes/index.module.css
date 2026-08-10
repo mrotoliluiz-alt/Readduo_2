@@ -10,6 +10,112 @@
     gap:24px;
 }
 
+/* ============================= */
+/* TEMA ESCURO */
+/* ============================= */
+
+:global([data-theme="escuro"]) .container {
+  background: #0f1425;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .titulo h1,
+:global([data-theme="escuro"]) .cardHeader h3,
+:global([data-theme="escuro"]) .profileInfo h2,
+:global([data-theme="escuro"]) .statCard h2 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header p,
+:global([data-theme="escuro"]) .profileInfo p,
+:global([data-theme="escuro"]) .profileInfo span,
+:global([data-theme="escuro"]) .profileInfo small,
+:global([data-theme="escuro"]) .cardHeader p,
+:global([data-theme="escuro"]) .statCard span,
+:global([data-theme="escuro"]) .statCard small {
+  color: #a8b1cc;
+}
+
+/* Cards */
+
+:global([data-theme="escuro"]) .profileCard,
+:global([data-theme="escuro"]) .card,
+:global([data-theme="escuro"]) .sideCard {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+
+/* Cards de estatísticas */
+
+:global([data-theme="escuro"]) .statCard {
+  background: #1c2340;
+}
+
+/* Botões de tema */
+
+:global([data-theme="escuro"]) .tema {
+  background: #1c2340;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .tema strong {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .tema span {
+  color: #a8b1cc;
+}
+
+/* Tema selecionado */
+
+:global([data-theme="escuro"]) .temaAtivo {
+  border-color: #0FA6B3;
+  box-shadow: 0 0 0 3px rgba(15, 166, 179, 0.18);
+}
+
+/* Itens de segurança */
+
+:global([data-theme="escuro"]) .item {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .item:hover {
+  background: #1c2340;
+}
+
+:global([data-theme="escuro"]) .itemInfo strong {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .itemInfo span {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .itemInfo:hover {
+ background-color: #0f1425;
+}
+
+/* Sobre */
+
+:global([data-theme="escuro"]) .sobreItem {
+  color: #a8b1cc;
+}
+
+/* Atalhos */
+
+:global([data-theme="escuro"]) .atalho {
+  background: #161c33;
+  border-color: #2a3153;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .atalho:hover {
+  background: #1c2340;
+}
+
+
 /* ===========================
    HEADER
 =========================== */

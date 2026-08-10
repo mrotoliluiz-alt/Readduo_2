@@ -7,12 +7,16 @@ import App from "./App.jsx";
 import './estilizacao/delete.css';
 import './estilizacao/globals.css';
 
+import { ThemeProvider } from "./Tema/themeContext.jsx";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
       <BrowserRouter>
+         <ThemeProvider>
         <App />
+      </ThemeProvider>
       </BrowserRouter>
   </React.StrictMode>
 );
