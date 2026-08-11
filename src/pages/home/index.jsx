@@ -1,6 +1,7 @@
 import styles from "./index.module.css";
 import Sidebar from "../../componentes/Sidebar";
 import CardLivro from "../../componentes/cardLivro";
+import { useTheme } from "../../Tema/themeContext.jsx";
 import {Flame, Star, House, PenTool, BookOpen } from "lucide-react";
 
 function Home() {

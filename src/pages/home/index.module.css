@@ -78,5 +78,54 @@
     overflow-x: auto;
     overflow-y: hidden;
 }
+/* =========================
+   TEMA ESCURO
+   ========================= */
+
+:global([data-theme="escuro"]) .Conteiner {
+  background-color: #0f1425;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header svg {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header h1 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .welcome {
+  background-color: #161c33;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .welcome h2 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .welcome p {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .statCard {
+  background-color: #1c2340;
+}
+
+:global([data-theme="escuro"]) .statCard h3 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .statCard span {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .tituloLeitCard {
+  color: #f1f5f9;
+}
 
 
