@@ -372,4 +372,222 @@
 
 .bonus button:hover{
     background:#0D94A0;
+}  
+
+/* =========================================================
+   TEMA ESCURO
+   ========================================================= */
+
+:global([data-theme="escuro"]) .container {
+  background: #0f1425;
+  color: #f1f5f9;
+}
+
+/* ---------- HEADER ---------- */
+
+:global([data-theme="escuro"]) .header {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .titulo {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .titulo h1 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .titulo svg {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header p {
+  color: #a8b1cc;
+}
+
+/* ---------- CARDS DE RESUMO ---------- */
+
+:global([data-theme="escuro"]) .card {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .card h2 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .card span {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .card small {
+  color: #7d86a8;
+}
+
+/* ---------- TABS ---------- */
+
+:global([data-theme="escuro"]) .tabs {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .tabs button {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .tabs button:hover {
+  background: #1c2340;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .tabs .active {
+  
+  color: #ffffff;
+}
+
+/* ---------- TRILHA DE MISSÕES ---------- */
+
+:global([data-theme="escuro"]) .missao {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .info h3 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .info p {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .info strong {
+  color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .linha {
+  background: #2a3153;
+}
+
+/* ---------- CÍRCULOS ---------- */
+
+:global([data-theme="escuro"]) .circulo {
+  border-color: #2a3153;
+  background: #161c33;
+}
+
+/* Missão atual */
+:global([data-theme="escuro"]) .circulo.atual {
+  background: #0fa6b3;
+  color: #ffffff;
+}
+
+/* Missão concluída */
+:global([data-theme="escuro"]) .circulo.concluida {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+/* Missão bloqueada */
+:global([data-theme="escuro"]) .circulo.bloqueada {
+  background: #252b43;
+  color: #64748b;
+}
+
+/* Bônus */
+:global([data-theme="escuro"]) .circulo.bonus {
+  background: #2b2345;
+  color: #a78bfa;
+}
+
+/* ---------- BADGE COMEÇAR ---------- */
+
+:global([data-theme="escuro"]) .badge {
+  background: #123c43;
+  color: #4dd4e0;
+}
+
+/* ---------- SIDEBAR / PAINEL DIREITO ---------- */
+
+:global([data-theme="escuro"]) .sidebar {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .sideCard {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .sideCard h3 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .sideCard h2 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .sideCard h4 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .sideCard p {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .sideCard span {
+  color: #7d86a8;
+}
+
+/* ---------- TÍTULO DO PAINEL ---------- */
+
+:global([data-theme="escuro"]) .sideTitulo {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .sideTitulo svg {
+  color: #0fa6b3;
+}
+
+/* ---------- PROGRESSO ---------- */
+
+:global([data-theme="escuro"]) .progress {
+  background: #252b43;
+}
+
+:global([data-theme="escuro"]) .progressFill {
+  background: #0fa6b3;
+}
+
+/* ---------- BÔNUS ---------- */
+
+:global([data-theme="escuro"]) .bonus {
+  background: #161c33;
+  border-color: #2a3153;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .bonus svg {
+  color: #a78bfa;
+}
+
+:global([data-theme="escuro"]) .bonus strong {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .bonus p {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .bonus button {
+  color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .bonus button:hover {
+  background: #1c2340;
+}
+
+/* ---------- NÍVEL ---------- */
+
+:global([data-theme="escuro"]) .levelCircle {
+  background: #1c2340;
+  border-color: #0fa6b3;
+  color: #f1f5f9;
 }

@@ -193,3 +193,97 @@
 .sidebarFechada .toggle{
     right: -30px;
 }
+
+/* =========================================================
+   TEMA ESCURO — SIDEBAR
+   ========================================================= */
+
+:global([data-theme="escuro"]) .sidebar {
+  background: #11172a;
+  border-right-color: #2a3153;
+  color: #f1f5f9;
+}
+
+/* ---------- LOGO ---------- */
+
+:global([data-theme="escuro"]) .logo {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .logo h2 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .logoIcon {
+  background: transparent;
+}
+
+/* ---------- BOTÃO DE ABRIR / FECHAR ---------- */
+
+:global([data-theme="escuro"]) .toggle {
+  background: #161c33;
+  border-color: #2a3153;
+  color: #cbd5e1;
+}
+
+:global([data-theme="escuro"]) .toggle:hover {
+  background: #1c2340;
+  color: #0fa6b3;
+  border-color: #0fa6b3;
+}
+
+/* ---------- MENU ---------- */
+
+:global([data-theme="escuro"]) .menu {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .menu svg {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .menu:hover {
+  background: #1c2340;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .menu:hover svg {
+  color: #0fa6b3;
+}
+
+/* ---------- MENU ATIVO ---------- */
+
+:global([data-theme="escuro"]) .menuAtivo {
+  background: #12343d;
+  color: #4dd4e0;
+}
+
+:global([data-theme="escuro"]) .menuAtivo svg {
+  color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .menuAtivo:hover {
+  background: #16414b;
+  color: #6fd5dd;
+}
+
+/* ---------- SIDEBAR FECHADA ---------- */
+
+:global([data-theme="escuro"]) .sidebarFechada {
+  background: #11172a;
+}
+
+/* ---------- MENU FECHADO ---------- */
+
+:global([data-theme="escuro"]) .sidebarFechada .menu {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .sidebarFechada .menu:hover {
+  background: #1c2340;
+}
+
+:global([data-theme="escuro"]) .sidebarFechada .menuAtivo {
+  background: #12343d;
+  color: #4dd4e0;
+}

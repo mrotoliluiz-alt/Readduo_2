@@ -119,42 +119,6 @@ function Configuracoes() {
 
         <div className={styles.left}>
 
-          {/* Perfil */}
-
-          <section className={styles.profileCard}>
-
-            <div className={styles.avatar}>
-              <img
-                src="https://i.pravatar.cc/200?img=32"
-                alt="Avatar de Luna Silveira"
-              />
-            </div>
-
-            <div className={styles.profileInfo}>
-
-              <div className={styles.nomeLinha}>
-                <h2>Luna Silveira</h2>
-
-                <BadgeCheck color="#4F7CFF" />
-              </div>
-
-              <p>Nível 12 • Viajante das Histórias</p>
-
-              <span>viagem.literaria@gmail.com</span>
-
-              <small>
-                Membro desde 15/04/2024 • Brasil
-              </small>
-
-              <button className={styles.editar}>
-                <Pencil size={18} />
-                Editar Perfil
-              </button>
-
-            </div>
-
-          </section>
-
           {/* Estatísticas */}
 
           <section className={styles.stats}>

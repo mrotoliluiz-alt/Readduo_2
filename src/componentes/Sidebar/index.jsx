@@ -130,6 +130,18 @@ function Sidebar({ fechada, setFechada }) {
 
     <button
         className={
+            location.pathname === "/Missoes"
+                ? styles.menuAtivo
+                : styles.menu
+        }
+        onClick={() => navigate("/Missoes")}
+    >
+        < ClipboardList />
+        {!fechada && <span>Missões</span>}
+    </button>
+
+    <button
+        className={
             location.pathname === "/Config"
                 ? styles.menuAtivo
                 : styles.menu
@@ -140,17 +152,7 @@ function Sidebar({ fechada, setFechada }) {
         {!fechada && <span>Configurações</span>}
     </button>
 
-    <button
-        className={
-            location.pathname === "/Missoes"
-                ? styles.menuAtivo
-                : styles.menu
-        }
-        onClick={() => navigate("/Missoes")}
-    >
-        < ClipboardList />
-        {!fechada && <span>Missões</span>}
-    </button>
+    
 
 </nav>
 

@@ -85,16 +85,7 @@ function Oficina() {
 
       {/* TABS */}
 
-      <section className={styles.tabs}>
-        {abas.map((aba, index) => (
-          <button
-            key={index}
-            className={index === 0 ? styles.active : ""}
-          >
-            {aba}
-          </button>
-        ))}
-      </section>
+      
 
       {/* CONTEÚDO */}
 

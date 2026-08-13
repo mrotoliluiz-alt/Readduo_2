@@ -5,6 +5,7 @@
     flex: 1;
     width: 100%;
     min-width: 0;
+    height: 100%;
 
     padding: 30px;
 
@@ -137,52 +138,6 @@
     transform:translateY(-2px);
 
     box-shadow:0 8px 18px rgba(124,58,237,.25);
-
-}
-
-/* ================= TABS ================= */
-
-.tabs{
-
-    display:flex;
-
-    gap:28px;
-
-    border-bottom:1px solid #dbe4ee;
-
-    margin-bottom:28px;
-
-}
-
-.tabs button{
-
-    border:none;
-
-    background:none;
-
-    padding-bottom:14px;
-
-    cursor:pointer;
-
-    color:#64748b;
-
-    transition:.2s;
-
-    font-size:1.5rem;
-
-}
-
-.tabs button:hover{
-
-    color:#0FA6B3;
-
-}
-
-.active{
-
-    color:#0FA6B3 !important;
-
-    border-bottom:3px solid #0FA6B3;
 
 }
 
@@ -565,6 +520,242 @@
 
     border-radius:20px;
 
+}
+
+/* =========================================================
+   TEMA ESCURO — OFICINA AUTORAL
+   ========================================================= */
+
+:global([data-theme="escuro"]) .container {
+  background: #0f1425;
+  color: #f1f5f9;
+}
+
+/* ---------- HEADER ---------- */
+
+:global([data-theme="escuro"]) .header {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .title h1{
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .title svg {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .headerInfo p {
+  color: #a8b1cc;
+}
+
+/* ---------- BOTÃO IMPORTAR ---------- */
+
+:global([data-theme="escuro"]) .importar {
+  background: #161c33;
+  border-color: #2a3153;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .importar:hover {
+  background: #1c2340;
+  border-color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .importar svg {
+  color: #0fa6b3;
+}
+/* ---------- ÁREA PRINCIPAL ---------- */
+
+:global([data-theme="escuro"]) .workspace {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+:global([data-theme="escuro"]) .sidebar {
+  background: #12182b;
+  border-color: #2a3153;
+}
+
+/* ---------- BUSCA ---------- */
+
+:global([data-theme="escuro"]) .searchBar {
+  background: #1c2340;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .searchBar input {
+  background: transparent;
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .searchBar input::placeholder {
+  color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .searchBar svg {
+  color: #7d86a8;
+}
+
+/* ---------- CABEÇALHO DAS OBRAS ---------- */
+
+:global([data-theme="escuro"]) .obrasHeader {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .obrasHeader button {
+  background: #1c2340;
+  color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .obrasHeader button:hover {
+  background: #243052;
+}
+
+/* ---------- CARDS DAS OBRAS ---------- */
+
+:global([data-theme="escuro"]) .obraCard {
+  background: #161c33;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .obraCard:hover {
+  background: #1c2340;
+  border-color: #384263;
+}
+
+:global([data-theme="escuro"]) .obraCard h3 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .obraCard span {
+  color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .obraCard p {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .obraCard button {
+  color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .obraCard button:hover {
+  color: #f1f5f9;
+}
+
+/* OBRA SELECIONADA */
+
+:global([data-theme="escuro"]) .obraAtiva {
+  background: #12343d;
+  border-color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .obraAtiva h3 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .obraAtiva span {
+  color: #6fd5dd;
+}
+
+:global([data-theme="escuro"]) .obraAtiva p {
+  color: #a8b1cc;
+}
+
+/* ---------- VER TODAS ---------- */
+
+:global([data-theme="escuro"]) .verTodas {
+  color: #0fa6b3;
+}
+
+:global([data-theme="escuro"]) .verTodas:hover {
+  background: #1c2340;
+}
+
+/* ---------- EDITOR ---------- */
+
+:global([data-theme="escuro"]) .editor {
+  background: #161c33;
+  color: #f1f5f9;
+}
+
+/* ---------- CABEÇALHO DO EDITOR ---------- */
+
+:global([data-theme="escuro"]) .editorHeader {
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .editorHeader h2 {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .salvamento {
+  color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .palavras {
+  color: #7d86a8;
+}
+
+/* ---------- BARRA DE FERRAMENTAS ---------- */
+
+:global([data-theme="escuro"]) .toolbar {
+  background: #12182b;
+  border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .toolbar button {
+  color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .toolbar button:hover {
+  background: #1c2340;
+  color: #f1f5f9;
+}
+
+/* ---------- EDITOR DE TEXTO ---------- */
+
+:global([data-theme="escuro"]) .textEditor {
+  background: #161c33;
+  color: #e2e8f0;
+}
+
+:global([data-theme="escuro"]) .textEditor h1 {
+  color: #f8fafc;
+}
+
+:global([data-theme="escuro"]) .textEditor p {
+  color: #cbd5e1;
+}
+
+:global([data-theme="escuro"]) .textEditor:focus {
+  outline: none;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+:global([data-theme="escuro"]) .sidebar::-webkit-scrollbar,
+:global([data-theme="escuro"]) .textEditor::-webkit-scrollbar {
+  width: 8px;
+}
+
+:global([data-theme="escuro"]) .sidebar::-webkit-scrollbar-track,
+:global([data-theme="escuro"]) .textEditor::-webkit-scrollbar-track {
+  background: #12182b;
+}
+
+:global([data-theme="escuro"]) .sidebar::-webkit-scrollbar-thumb,
+:global([data-theme="escuro"]) .textEditor::-webkit-scrollbar-thumb {
+  background: #2a3153;
+  border-radius: 10px;
+}
+
+:global([data-theme="escuro"]) .sidebar::-webkit-scrollbar-thumb:hover,
+:global([data-theme="escuro"]) .textEditor::-webkit-scrollbar-thumb:hover {
+  background: #3b4668;
 }
 
 /* ================= RESPONSIVO ================= */
