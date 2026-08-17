@@ -111,6 +111,14 @@
   color: #f1f5f9;
 }
 
+:global([data-theme="escuro"]) .atalho p {
+  color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .atalho:hover p {
+ color: #0FA6B3;
+}
+
 :global([data-theme="escuro"]) .atalho:hover {
   background: #1c2340;
 }

@@ -60,12 +60,6 @@ const aparencia = [
     valor: "escuro",
     icone: <Moon size={28} />,
   },
-  {
-    titulo: "Sistema",
-    descricao: "Segue o tema do dispositivo",
-    valor: "sistema",
-    icone: <Monitor size={28} />,
-  },
 ];
 
 const seguranca = [
@@ -200,44 +194,6 @@ function Configuracoes() {
 
         <div className={styles.right}>
 
-          {/* Segurança */}
-
-          <section className={styles.sideCard}>
-
-            <div className={styles.cardHeader}>
-              <h3>Conta e Segurança</h3>
-            </div>
-
-            {seguranca.map((item, index) => (
-
-              <button
-                key={index}
-                className={styles.item}
-              >
-
-                <div className={styles.itemIcon}>
-                  {item.icone}
-                </div>
-
-                <div className={styles.itemInfo}>
-
-                  <strong>
-                    {item.titulo}
-                  </strong>
-
-                  <span>
-                    {item.descricao}
-                  </span>
-
-                </div>
-
-                <ChevronRight size={18} />
-
-              </button>
-
-            ))}
-
-          </section>
 
           {/* Sobre */}
 
@@ -277,22 +233,22 @@ function Configuracoes() {
             </div>
 
             <button className={styles.atalho}>
-              Editar Perfil
+              <p>Editar Perfil</p>
               <ChevronRight size={18} />
             </button>
 
             <button className={styles.atalho}>
-              Central de Ajuda
+              <p>Central de Ajuda</p>
               <ChevronRight size={18} />
             </button>
 
             <button className={styles.atalho}>
-              Política de Privacidade
+              <p>Política de Privacidade</p>
               <ChevronRight size={18} />
             </button>
 
             <button className={styles.atalho}>
-              Termos de Uso
+              <p>Termos de Uso</p>
               <ChevronRight size={18} />
             </button>
 

@@ -229,27 +229,7 @@ function Missoes() {
 
           </div>
 
-          <div className={styles.bonus}>
-
-            <Gift size={22} />
-
-            <div>
-
-              <strong>Bônus de sequência</strong>
-
-              <p>
-                Complete todas as missões por 3 dias seguidos
-                para ganhar +500 XP.
-              </p>
-
-            </div>
-
-            <button>
-              Resgatar
-              <ChevronRight size={18} />
-            </button>
-
-          </div>
+        
 
         </aside>
 
