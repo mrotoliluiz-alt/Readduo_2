@@ -286,6 +286,107 @@
 
 }
 
+/* ================================================= */
+/* ================= TEMA ESCURO ================== */
+/* ================================================= */
+
+:global([data-theme="escuro"]) .container {
+    background: #0f1425;
+    color: #f1f5f9;
+}
+
+/* ================= HEADER ================= */
+
+:global([data-theme="escuro"]) .header svg {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header h1 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header p {
+    color: #a8b1cc;
+}
+
+/* ================= PESQUISA ================= */
+
+:global([data-theme="escuro"]) .searchBar {
+    background: #161c33;
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .searchBar input {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .searchBar input::placeholder {
+    color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .searchBar svg {
+    color: #a8b1cc;
+}
+
+/* ================= TABS ================= */
+
+:global([data-theme="escuro"]) .tabs {
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .tabs button {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .tabs button:hover {
+    color: #0FA6B3;
+}
+
+:global([data-theme="escuro"]) .active {
+    color: #0FA6B3 !important;
+    border-bottom-color: #0FA6B3;
+}
+
+/* ================= TOPO ================= */
+
+:global([data-theme="escuro"]) .topBar span {
+    color: #a8b1cc;
+}
+
+/* ================= BOTÕES ================= */
+
+:global([data-theme="escuro"]) .actions button {
+    background: #161c33;
+    border-color: #2a3153;
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .actions button:hover {
+    background: #1c2340;
+    border-color: #0FA6B3;
+}
+
+/* ================= BOTÕES DE VISUALIZAÇÃO ================= */
+
+:global([data-theme="escuro"]) .viewButtons {
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .viewButtons button {
+    background: #161c33;
+    border-right-color: #2a3153;
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .viewButtons button:hover {
+    color: #0FA6B3;
+}
+
+:global([data-theme="escuro"]) .activeView {
+    background: #0FA6B3 !important;
+    color: #ffffff !important;
+}
+
 /* ================= RESPONSIVO ================= */
 
 @media(max-width:1100px){

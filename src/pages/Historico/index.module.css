@@ -5,6 +5,7 @@
     flex: 1;
     width: 100%;
     min-width: 0;
+    height: 100%;
 
     padding: 30px;
 
@@ -312,6 +313,132 @@
     font-size: 2rem;
 
     letter-spacing: 2px;
+}
+
+/* ================================================= */
+/* ================= TEMA ESCURO ================== */
+/* ================================================= */
+
+:global([data-theme="escuro"]) .container {
+    background: #0f1425;
+    color: #f1f5f9;
+}
+
+/* ================= HEADER ================= */
+
+:global([data-theme="escuro"]) .header h1 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .header p {
+    color: #a8b1cc;
+}
+
+/* ================= CARDS ================= */
+
+:global([data-theme="escuro"]) .card {
+    background: #161c33;
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .card:hover {
+    box-shadow: 0 12px 25px rgba(0, 238, 255, 0.35);
+}
+
+:global([data-theme="escuro"]) .card span {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .card h2 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .card p {
+    color: #7d86a8;
+}
+
+/* ================= TÍTULO ================= */
+
+:global([data-theme="escuro"]) .titleSection h2 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .titleSection button {
+    color: #0FA6B3;
+}
+
+/* ================= FILTROS ================= */
+
+:global([data-theme="escuro"]) .filtros select {
+    background: #161c33;
+    border-color: #2a3153;
+    color: #f1f5f9;
+}
+
+/* ================= LISTA ================= */
+
+:global([data-theme="escuro"]) .livro {
+    background: #161c33;
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .livro:hover {
+   box-shadow: 0 12px 15px rgba(0, 238, 255, 0.35);
+}
+
+/* ================= INFORMAÇÕES ================= */
+
+:global([data-theme="escuro"]) .info h3 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .info p {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .info small {
+    color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .genero {
+    background: #16213f;
+    color: #67d5df;
+}
+
+/* ================= PROGRESSO ================= */
+
+:global([data-theme="escuro"]) .progresso p {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .progresso span {
+    color: #4ade80;
+}
+
+:global([data-theme="escuro"]) .barra {
+    background: #2a3153;
+}
+
+:global([data-theme="escuro"]) .preenchimento {
+    background: #0FA6B3;
+}
+
+/* ================= BOTÃO ================= */
+
+:global([data-theme="escuro"]) .botao {
+    background: #161c33;
+    color: #f1f5f9;
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .botao:hover {
+    background: #1c2340;
+}
+
+/* ================= NOTA ================= */
+
+:global([data-theme="escuro"]) .nota {
+    color: #facc15;
 }
 
 /* ================= RESPONSIVIDADE ================= */

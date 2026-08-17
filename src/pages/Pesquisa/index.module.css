@@ -263,6 +263,112 @@
 
 }
 
+/* ================================================= */
+/* ================= TEMA ESCURO ================== */
+/* ================================================= */
+
+:global([data-theme="escuro"]) .container {
+    background: #0f1425;
+    color: #f1f5f9;
+}
+
+/* ================= HEADER ================= */
+
+:global([data-theme="escuro"]) .header {
+    color: #f1f5f9;
+}
+
+/* ================= PESQUISA ================= */
+
+:global([data-theme="escuro"]) .searchArea h2 {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .searchBar {
+    background: #161c33;
+    border-color: #2a3153;
+}
+
+:global([data-theme="escuro"]) .searchBar:hover {
+    border-color: #0FA6B3;
+}
+
+:global([data-theme="escuro"]) .searchBar input {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .searchBar input::placeholder {
+    color: #7d86a8;
+}
+
+:global([data-theme="escuro"]) .searchBar svg {
+    color: #a8b1cc;
+}
+
+/* ================= SUGESTÕES ================= */
+
+:global([data-theme="escuro"]) .sugestoes span {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .sugestoes button {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .sugestoes button:hover {
+    color: #0FA6B3;
+}
+
+/* ================= RESULTADOS ================= */
+
+:global([data-theme="escuro"]) .resultado h2 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .rightResult span {
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .rightResult button {
+    background: #161c33;
+    border-color: #2a3153;
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .rightResult button:hover {
+    border-color: #0FA6B3;
+}
+
+/* ================= FILTROS ================= */
+
+:global([data-theme="escuro"]) .filtros button {
+    background: #1c2340;
+    border-color: #2a3153;
+    color: #a8b1cc;
+}
+
+:global([data-theme="escuro"]) .filtros button:hover {
+    background: #16213f;
+    border-color: #0FA6B3;
+    color: #f1f5f9;
+}
+
+/* ================= INFORMAÇÕES ================= */
+
+:global([data-theme="escuro"]) .info h3 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) .info p {
+    color: #a8b1cc;
+}
+
+/* ================= RODAPÉ ================= */
+
+:global([data-theme="escuro"]) .footer span {
+    color: #a8b1cc;
+}
+
 /* ================= RESPONSIVIDADE ================= */
 
 @media(max-width:1200px){

@@ -208,3 +208,40 @@
     font-size: 1.4rem;
 
 }
+
+
+/* ================================================= */
+/* ================= TEMA ESCURO ================== */
+/* ================================================= */
+
+:global([data-theme="escuro"]) .card {
+
+    background: #161c33;
+
+    border-color: #2a3153;
+
+}
+
+:global([data-theme="escuro"]) .card:hover {
+
+    box-shadow: 0 12px 25px rgba(0, 238, 255, 0.35);
+
+}
+
+:global([data-theme="escuro"]) .info h3 {
+
+    color: #f1f5f9;
+
+}
+
+:global([data-theme="escuro"]) .info p {
+
+    color: #a8b1cc;
+
+}
+
+:global([data-theme="escuro"]) .footer span {
+
+    color: #a8b1cc;
+
+}
