@@ -859,6 +859,217 @@ AVATAR AMIGOS
 
 }
 
+/* =========================================================
+   MODO ESCURO
+   ========================================================= */
+
+:global([data-theme="escuro"]) .container {
+    background: #0f1426;
+    color: #f1f5f9;
+}
+
+/* ================= CARDS ================= */
+
+:global([data-theme="escuro"]) .profileCard,
+:global([data-theme="escuro"]) .statCard,
+:global([data-theme="escuro"]) .sideCard,
+:global([data-theme="escuro"]) .atividadeCard,
+:global([data-theme="escuro"]) .generosCard,
+:global([data-theme="escuro"]) .conquistasCard {
+    background: #171d33;
+    border-color: #2b3555;
+    color: #f1f5f9;
+}
+
+/* ================= TEXTOS ================= */
+
+:global([data-theme="escuro"]) h1,
+:global([data-theme="escuro"]) h2,
+:global([data-theme="escuro"]) h3,
+:global([data-theme="escuro"]) h4 {
+    color: #f1f5f9;
+}
+
+:global([data-theme="escuro"]) p,
+:global([data-theme="escuro"]) span,
+:global([data-theme="escuro"]) small {
+    color: #aab6d3;
+}
+
+/* ================= PERFIL ================= */
+
+:global([data-theme="escuro"]) .profileCard {
+    background: #171d33;
+    border-color: #2b3555;
+}
+
+:global([data-theme="escuro"]) .profileInfo p {
+    color: #aab6d3;
+}
+
+:global([data-theme="escuro"]) .profileInfo span {
+    color: #94a3c5;
+}
+
+:global([data-theme="escuro"]) .profileInfo small {
+    color: #8491b0;
+}
+
+/* ================= XP ================= */
+
+:global([data-theme="escuro"]) .progressBar,
+:global([data-theme="escuro"]) .barra {
+    background: #29334f;
+}
+
+/* ================= ABAS ================= */
+
+:global([data-theme="escuro"]) .tabs {
+    border-color: #2b3555;
+}
+
+:global([data-theme="escuro"]) .tabs button {
+    color: #94a3b8;
+}
+
+:global([data-theme="escuro"]) .tabs button:hover {
+    color: #0FA6B3;
+}
+
+:global([data-theme="escuro"]) .tabs .active {
+    color: #0FA6B3;
+}
+
+/* ================= ATIVIDADES ================= */
+
+:global([data-theme="escuro"]) .atividadeItem {
+    border-color: #2b3555;
+}
+
+:global([data-theme="escuro"]) .atividadeItem p {
+    color: #cbd5e1;
+}
+
+:global([data-theme="escuro"]) .atividadeItem span {
+    color: #8491b0;
+}
+
+/* ================= CONQUISTAS ================= */
+
+:global([data-theme="escuro"]) .conquista {
+    background: #1d2540;
+    border-color: #303b5c;
+}
+
+/* ================= HOVER ================= */
+
+:global([data-theme="escuro"]) .statCard:hover,
+:global([data-theme="escuro"]) .sideCard:hover,
+:global([data-theme="escuro"]) .atividadeCard:hover,
+:global([data-theme="escuro"]) .generosCard:hover,
+:global([data-theme="escuro"]) .conquistasCard:hover {
+    background: #1c2440;
+    border-color: #3a476b;
+}
+
+/* ================= CARDS DO PERFIL ================= */
+
+.card,
+.activityCard,
+.generosCard,
+.sequenciaCard,
+.conquistasCard,
+.amigosCard,
+.estatisticasCard {
+    background: #161d35;
+    border: 1px solid #2b3657;
+    color: #e8edf7;
+}
+
+/* Títulos dos cards */
+
+.card h2,
+.card h3,
+.activityCard h2,
+.activityCard h3,
+.generosCard h2,
+.generosCard h3,
+.sequenciaCard h2,
+.sequenciaCard h3,
+.conquistasCard h2,
+.conquistasCard h3 {
+    color: #e8edf7;
+}
+
+/* Textos secundários */
+
+.card p,
+.card span,
+.activityCard p,
+.activityCard span,
+.generosCard p,
+.generosCard span,
+.sequenciaCard p,
+.sequenciaCard span {
+    color: #a9b5cf;
+}
+
+/* ================= ATIVIDADES ================= */
+
+.activityItem {
+    border-bottom: 1px solid #2b3657;
+}
+
+.activityItem:last-child {
+    border-bottom: none;
+}
+
+/* ================= BOTÃO VER TODAS ================= */
+
+.verTodas {
+    background: #102b42;
+    color: #0fa6b3;
+    border: none;
+}
+
+.verTodas:hover {
+    background: #143b56;
+}
+
+/* ================= GRÁFICO ================= */
+
+.generosCard {
+    background: #161d35;
+}
+
+/* ================= SEQUÊNCIA ================= */
+
+.sequencia {
+    background: #161d35;
+}
+
+.sequencia .dia {
+    color: #a9b5cf;
+}
+
+/* ================= CONQUISTAS ================= */
+
+.conquistasCard {
+    background: #161d35;
+}
+
+/* ================= BORDAS ================= */
+
+.card,
+.activityCard,
+.generosCard,
+.sequencia,
+.conquistasCard,
+.amigosCard,
+.estatisticasCard {
+    box-shadow: none;
+}
+
 /* ======================================================
 RESPONSIVO
 ====================================================== */
