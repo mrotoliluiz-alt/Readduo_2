@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-
+import Botao from '../../componentes/botao';
 import {
   User,
   Calendar,
@@ -181,10 +181,15 @@ function Perfil() {
               </div>
             </div>
 
-            <button className={styles.editar}>
-              <Pencil size={18} />
-              Editar Perfil
-            </button>
+            <Botao
+            texto=' Seguidores'
+            variante= 'primary'
+            />
+
+            <Botao
+            texto=' Editar Perfil'
+            variante= 'primary'
+            />
           </section>
 
           {/* Tabs */}

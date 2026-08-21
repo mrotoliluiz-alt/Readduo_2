@@ -92,50 +92,7 @@ function Salvos() {
           <Search size={20} />
         </div>
       </section>
-
-      {/* Categorias */}
-
-      <section className={styles.tabs}>
-        {categorias.map((categoria, index) => (
-          <button
-            key={index}
-            className={index === 0 ? styles.active : ""}
-          >
-            {categoria}
-          </button>
-        ))}
-      </section>
-
-      {/* Linha superior */}
-
-      <section className={styles.topBar}>
-        <span>48 obras salvas</span>
-
-        <div className={styles.actions}>
-          <button>
-            <SlidersHorizontal size={16} />
-
-            Filtros
-          </button>
-
-          <button>
-            <ArrowUpDown size={16} />
-
-            Ordenar por
-          </button>
-
-          <div className={styles.viewButtons}>
-            <button className={styles.activeView}>
-              <Grid2x2 size={18} />
-            </button>
-
-            <button>
-              <List size={18} />
-            </button>
-          </div>
-        </div>
-      </section>
-
+    
       {/* Grid */}
 
       <section className={styles.grid}>

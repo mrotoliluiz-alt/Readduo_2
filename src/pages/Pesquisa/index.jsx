@@ -109,41 +109,6 @@ function Pesquisa() {
 
           <Search size={22} />
         </div>
-
-        <div className={styles.sugestoes}>
-          <span>Sugestões:</span>
-
-          {sugestoes.map((item, index) => (
-            <button key={index}>{item}</button>
-          ))}
-        </div>
-      </section>
-
-      {/* Resultado */}
-
-      <section className={styles.resultado}>
-
-        <div className={styles.rightResult}>
-          <span>132 resultados encontrados</span>
-
-          <button>
-            Mais relevantes
-
-            <ChevronDown size={16} />
-          </button>
-        </div>
-      </section>
-
-      {/* Filtros */}
-
-      <section className={styles.filtros}>
-        {filtros.map((item, index) => (
-          <button key={index}>
-            <SlidersHorizontal size={16} />
-
-            {item}
-          </button>
-        ))}
       </section>
 
       {/* Grid */}
