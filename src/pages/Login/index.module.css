@@ -175,6 +175,155 @@
   font-size: 5.2em;
 }
 
+/* =====================================================
+   MODO ESCURO
+===================================================== */
+
+/* ---------- Fundo geral ---------- */
+
+[data-theme="escuro"] .loginContainer {
+  background: #09122C;
+}
+
+
+/* ---------- Lado esquerdo ---------- */
+
+[data-theme="escuro"] .ladoEsquerdo {
+  background: linear-gradient(
+    135deg,
+    #087f8a 0%,
+    #173f9e 100%
+  );
+
+  color: #F8FAFC;
+}
+
+
+/* Círculos decorativos */
+
+[data-theme="escuro"] .ladoEsquerdo::before {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="escuro"] .ladoEsquerdo::after {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ---------- Logo / título ---------- */
+
+[data-theme="escuro"] .titulo {
+  color: #F8FAFC;
+}
+
+
+/* ---------- Textos do lado esquerdo ---------- */
+
+[data-theme="escuro"] .leftContent p {
+  color: #F8FAFC;
+}
+
+[data-theme="escuro"] .leftContent a {
+  color: #F8FAFC;
+}
+
+[data-theme="escuro"] .leftContent li {
+  color: #D7E0F0;
+}
+
+
+/* ---------- Lado direito ---------- */
+
+[data-theme="escuro"] .rightSide {
+  background: #09122C;
+}
+
+
+/* ---------- Formulário ---------- */
+
+[data-theme="escuro"] .formCard h2 {
+  color: #F8FAFC;
+}
+
+[data-theme="escuro"] .formCard p {
+  color: #AAB7D1;
+}
+
+
+/* Inputs */
+
+[data-theme="escuro"] .formCard input {
+  background: #151F3B;
+  border: 1px solid #29385E;
+  color: #F8FAFC;
+}
+
+[data-theme="escuro"] .formCard input::placeholder {
+  color: #7F8EAB;
+}
+
+[data-theme="escuro"] .formCard input:focus {
+  outline: none;
+  border-color: #0FA6B3;
+  box-shadow: 0 0 0 2px rgba(15, 166, 179, 0.15);
+}
+
+
+/* ---------- Cadastro ---------- */
+
+[data-theme="escuro"] .register {
+  color: #AAB7D1;
+}
+
+[data-theme="escuro"] .register a {
+  color: #0FA6B3;
+}
+
+
+/* ---------- Mensagem de erro ---------- */
+
+[data-theme="escuro"] .erro {
+  color: #f87171;
+}
+
+
+/* ---------- Texto grande ---------- */
+
+[data-theme="escuro"] .Hgrande {
+  color: #F8FAFC;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - MODO ESCURO
+===================================================== */
+
+@media screen and (max-width: 768px) {
+
+  [data-theme="escuro"] .rightSide {
+    background: #09122C;
+  }
+
+  [data-theme="escuro"] .formCard h2 {
+    color: #F8FAFC;
+  }
+
+  [data-theme="escuro"] .formCard p {
+    color: #AAB7D1;
+  }
+
+  [data-theme="escuro"] .formCard input {
+    background: #151F3B;
+    border-color: #29385E;
+    color: #F8FAFC;
+  }
+
+  [data-theme="escuro"] .register {
+    color: #AAB7D1;
+  }
+
+}
+
 @media screen and ( max-width: 768px){
   .loginContainer{
     display: flex;

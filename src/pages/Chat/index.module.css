@@ -411,6 +411,129 @@
 
 }
 
+/* =====================================================
+   MODO ESCURO
+===================================================== */
+
+[data-theme="escuro"] .container{
+    background:#09122C;
+    color:#E8EDF7;
+}
+
+/* ---------- Header ---------- */
+
+[data-theme="escuro"] .titulo,
+[data-theme="escuro"] .titulo h1{
+    color:#F8FAFC;
+}
+
+[data-theme="escuro"] .header p{
+    color:#A9B5CF;
+}
+
+/* ---------- Sidebar ---------- */
+
+[data-theme="escuro"] .sidebar{
+    background:#161D35;
+    border-color:#273353;
+}
+
+[data-theme="escuro"] .searchArea{
+    border-bottom:1px solid #273353;
+}
+
+[data-theme="escuro"] .searchBar{
+    background:#1E2745;
+    border-color:#334266;
+}
+
+[data-theme="escuro"] .searchBar input{
+    color:#F8FAFC;
+}
+
+[data-theme="escuro"] .searchBar input::placeholder{
+    color:#8FA3C8;
+}
+
+[data-theme="escuro"] .searchBar svg{
+    color:#A9B5CF;
+}
+
+/* ---------- Conversas ---------- */
+
+[data-theme="escuro"] .conversa{
+    background:#161D35;
+}
+
+[data-theme="escuro"] .conversa:hover{
+    background:#202B4A;
+}
+
+[data-theme="escuro"] .info strong{
+    color:#F8FAFC;
+}
+
+[data-theme="escuro"] .info span,
+[data-theme="escuro"] .direita small{
+    color:#A9B5CF;
+}
+
+/* ---------- Chat ---------- */
+
+[data-theme="escuro"] .chat{
+    background:#161D35;
+    border-color:#273353;
+}
+
+[data-theme="escuro"] .chatVazio h2{
+    color:#F8FAFC;
+}
+
+[data-theme="escuro"] .chatVazio p{
+    color:#A9B5CF;
+}
+
+[data-theme="escuro"] .semConversa{
+    color:#A9B5CF;
+}
+
+[data-theme="escuro"] .semConversa h3{
+    color:#F8FAFC;
+}
+
+/* ---------- Comunidade ---------- */
+
+[data-theme="escuro"] .comunidade{
+    background:#1E2745;
+    border-color:#334266;
+}
+
+[data-theme="escuro"] .comTitulo{
+    color:#F8FAFC;
+}
+
+[data-theme="escuro"] .comunidade p{
+    color:#A9B5CF;
+}
+
+/* ---------- Botões ---------- */
+
+[data-theme="escuro"] .novaConversa{
+    background:#0FA6B3;
+}
+
+[data-theme="escuro"] .novaConversa:hover{
+    background:#12B9C8;
+}
+
+[data-theme="escuro"] .chatVazio button{
+    background:#0FA6B3;
+}
+
+[data-theme="escuro"] .chatVazio button:hover{
+    background:#12B9C8;
+}
+
 
 @media(max-width:1200px){
 

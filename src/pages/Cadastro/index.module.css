@@ -130,6 +130,156 @@
   color: #ef4444;
 }
 
+/* =====================================================
+   MODO ESCURO
+===================================================== */
+
+/* ---------- Fundo geral ---------- */
+
+[data-theme="escuro"] .conteiner {
+    background-color: #09122C;
+}
+
+
+/* ---------- Lado esquerdo ---------- */
+
+[data-theme="escuro"] .LadoEsquerdo {
+    background: linear-gradient(
+        135deg,
+        #087f8a 0%,
+        #173f9e 100%
+    );
+
+    color: #F8FAFC;
+}
+
+
+/* ---------- Elementos decorativos ---------- */
+
+[data-theme="escuro"] .LadoEsquerdo::before {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="escuro"] .LadoEsquerdo::after {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ---------- Conteúdo do lado esquerdo ---------- */
+
+[data-theme="escuro"] .LadoE_componentes {
+    color: #F8FAFC;
+}
+
+[data-theme="escuro"] .LadoE_componentes a {
+    color: #F8FAFC;
+}
+
+[data-theme="escuro"] .LadoE_componentes h2 {
+    color: #F8FAFC;
+}
+
+[data-theme="escuro"] .LadoE_componentes p {
+    color: #D7E0F0;
+}
+
+
+/* ---------- Texto grande ---------- */
+
+[data-theme="escuro"] .Hgrande {
+    color: #F8FAFC;
+}
+
+
+/* ---------- Lado direito ---------- */
+
+[data-theme="escuro"] .LadoDireito {
+    background: #09122C;
+}
+
+
+/* ---------- Formulário ---------- */
+
+[data-theme="escuro"] .ConteinerForm {
+    color: #F8FAFC;
+}
+
+[data-theme="escuro"] .ConteinerForm h2 {
+    color: #F8FAFC;
+}
+
+[data-theme="escuro"] .ConteinerForm p {
+    color: #AAB7D1;
+}
+
+
+/* ---------- Inputs ---------- */
+
+[data-theme="escuro"] .ConteinerForm input {
+    background-color: #151F3B;
+    border: 1px solid #29385E;
+    color: #F8FAFC;
+}
+
+[data-theme="escuro"] .ConteinerForm input::placeholder {
+    color: #7F8EAB;
+}
+
+[data-theme="escuro"] .ConteinerForm input:focus {
+    outline: none;
+    border-color: #0FA6B3;
+    box-shadow: 0 0 0 2px rgba(15, 166, 179, 0.15);
+}
+
+
+/* ---------- Link para entrar ---------- */
+
+[data-theme="escuro"] .Entrar {
+    color: #AAB7D1;
+}
+
+[data-theme="escuro"] .Entrar a {
+    color: #0FA6B3;
+}
+
+
+/* ---------- Erro ---------- */
+
+[data-theme="escuro"] .erro {
+    color: #f87171;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE - MODO ESCURO
+===================================================== */
+
+@media (max-width: 900px) {
+
+    [data-theme="escuro"] .LadoDireito {
+        background: #09122C;
+    }
+
+    [data-theme="escuro"] .ConteinerForm h2 {
+        color: #F8FAFC;
+    }
+
+    [data-theme="escuro"] .ConteinerForm p {
+        color: #AAB7D1;
+    }
+
+    [data-theme="escuro"] .ConteinerForm input {
+        background-color: #151F3B;
+        border-color: #29385E;
+        color: #F8FAFC;
+    }
+
+    [data-theme="escuro"] .Entrar {
+        color: #AAB7D1;
+    }
+
+}
+
 @media (max-width: 900px) {
   .leftSide {
     display: none;

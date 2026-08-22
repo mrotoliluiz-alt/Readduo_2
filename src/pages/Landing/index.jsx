@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
 import CardLivro from "../../componentes/cardLivro";
+
 import {
   Flame,
   BookText,
@@ -20,21 +21,21 @@ function Landing() {
             <nav className={styles.navbar}>
 
                 <div className={styles.logo}>
-                    <img src= {logo} alt="logo" />
 
-                    
-                <div className={styles.titulo}>
+                    <img src={logo} alt="logo" />
 
-                    <h1 className={styles.logoRead}>
-                        Read
-                    </h1>
+                    <div className={styles.titulo}>
 
-                    <h1 className={styles.logoDuo}>
-                        duo
-                    </h1>
+                        <h1 className={styles.logoRead}>
+                            Read
+                        </h1>
 
-                </div>
-                
+                        <h1 className={styles.logoDuo}>
+                            duo
+                        </h1>
+
+                    </div>
+
                 </div>
 
 
@@ -56,93 +57,148 @@ function Landing() {
 
             </nav>
 
-            <div className={styles.corpo}>
+            <div className={styles.conteudoPrincipal}>
+
 
                 <div className={styles.esquerda}>
 
-                <div className={styles.Textos}>
-                <h2>Leia para</h2>
-                <h2> <span className={styles.destaque}>Conhecer</span>, pratique</h2>
-                <h2>Para <span className={styles.destaque}>aprender</span></h2>
-                <h3>O <span className={styles.destaqueMenor}>Readduo</span> é para você!</h3>
+                    <div className={styles.Textos}>
+
+                        <h2>
+                            Leia para
+                        </h2>
+
+                        <h2>
+                            <span className={styles.destaque}>
+                                Conhecer
+                            </span>, pratique
+                        </h2>
+
+                        <h2>
+                            Para <span className={styles.destaque}>
+                                aprender
+                            </span>
+                        </h2>
+
+                        <h3>
+                            O <span className={styles.destaqueMenor}>
+                                Readduo
+                            </span> é para você!
+                        </h3>
+
+                    </div>
+
+                    <div className={styles.conteinerSinb}>
+
+                        <div className={styles.sinb}>
+
+                            <BookText color="#0FA6B3" />
+
+                            <p>
+                                Variedade de Livros!
+                            </p>
+
+                        </div>
+
+
+                        <div className={styles.sinb}>
+
+                            <Flame
+                                color="#0FA6B3"
+                                className={styles.icone}
+                            />
+
+                            <p>
+                                Mantenha o Ritmo!
+                            </p>
+
+                        </div>
+
+
+                        <div className={styles.sinb}>
+
+                            <Star color="#0FA6B3" />
+
+                            <p>
+                                XP e Conquistas!
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
-                <div className={styles.conteinerSinb}>
+                <div className={styles.direita}>
 
-                    <div className={styles.sinb}>
-                        <BookText color='#0FA6B3'></BookText>
-                        <p>  Variedade de Livros!</p>
-                    </div>
+                    {/* 
+                        Futuramente coloque a imagem aqui.
 
-                    <div className={styles.sinb}>
-                        <Flame color='#0FA6B3' className={styles.icone}></Flame>
-                        <p>  Mantenha o Ritmo!</p>
-                    </div>
+                        Exemplo:
 
-                    <div className={styles.sinb}>
-                        <Star color='#0FA6B3'></Star>
-                        <p>  XP e Conquistas!</p>
-                    </div>
-                    
+                        <img
+                            src={suaImagem}
+                            alt="Ilustração do Readduo"
+                        />
+                    */}
+
                 </div>
 
-                
-                
-
-                
-
             </div>
 
-            <div className={styles.direita}>
+            <section className={styles.baixo}>
 
+                <h3 className={styles.livraria}>
 
-            </div>
+                    <LibraryBig
+                        color="#0FA6B3"
+                        width={38}
+                        height={33}
+                    />
 
-            </div>
+                    Conheça alguns de nossos livros
 
-            <div className={styles.baixo}>
+                </h3>
 
-                <h3 className={styles.livraria}> <LibraryBig color='#0FA6B3' width={38} height={33}></LibraryBig> Conheça alguns de nossos livros </h3>
 
                 <div className={styles.leitCard}>
+
                     <CardLivro
-            titulo="Deserto"
-            autor="Amigo loko"
-            tipo="Livro"
-            />
+                        titulo="Deserto"
+                        autor="Amigo loko"
+                        tipo="Livro"
+                    />
 
-            <CardLivro
-            titulo="Cuna"
-            autor=" Herbert Frank "
-            tipo="Livro"
-            />
+                    <CardLivro
+                        titulo="Cuna"
+                        autor="Herbert Frank"
+                        tipo="Livro"
+                    />
 
-            <CardLivro
-            titulo="Harry Poter"
-            autor="Minha varinha magica"
-            tipo="Livro"
-            />
+                    <CardLivro
+                        titulo="Harry Poter"
+                        autor="Minha varinha magica"
+                        tipo="Livro"
+                    />
 
-            <CardLivro
-            titulo="Duna"
-            autor="Frank Herbert"
-            tipo="Livro"
-            />
+                    <CardLivro
+                        titulo="Duna"
+                        autor="Frank Herbert"
+                        tipo="Livro"
+                    />
 
-            <CardLivro
-            titulo="O Peso das Palavras Cura a Alma"
-            autor="Sthefany Oliveira"
-            tipo="Livro"
-            />
+                    <CardLivro
+                        titulo="O Peso das Palavras Cura a Alma"
+                        autor="Sthefany Oliveira"
+                        tipo="Livro"
+                    />
+
                 </div>
-            </div>
 
-            
+            </section>
 
         </div>
     );
 }
 
 export default Landing;
-
