@@ -1,34 +1,13 @@
-/* =====================================================
-   RESET BÁSICO
-===================================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body,
-#root {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100%;
-}
-
-
-/* =====================================================
-   PÁGINA PRINCIPAL
-===================================================== */
 
 .landing {
     width: 100%;
     min-height: 100vh;
     height: auto;
 
-    padding: 0 40px;
+    
 
-    background: #09122C;
-    color: #F8FAFC;
+    background: #ffffff;
+    color: #06101a;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
@@ -52,7 +31,7 @@ body,
     align-items: center;
     justify-content: space-between;
 
-    background: #10182F;
+    background: #e6e8ec;
     border-bottom: 1px solid #273353;
 }
 
@@ -94,7 +73,7 @@ body,
 }
 
 .logoDuo {
-    color: #F8FAFC;
+    color: #0f1820;
 }
 
 
@@ -131,7 +110,7 @@ body,
     min-height: 0;
     height: auto;
 
-    padding: 0;
+    padding: 0 40px;
 }
 
 
@@ -171,7 +150,7 @@ body,
     line-height: 1.15;
     font-weight: 750;
 
-    color: #F8FAFC;
+    color: #151c24;
 }
 
 .Textos h3 {
@@ -185,7 +164,7 @@ body,
 
     gap: 6px;
 
-    color: #D7E0F0;
+    color: #151a24;
 }
 
 
@@ -238,10 +217,10 @@ body,
 
     border-radius: 10px;
 
-    background: #151F3B;
+    background: #e5e8f0;
     border: 1px solid #29385E;
 
-    color: #D7E0F0;
+    color: #161b24;
 
     white-space: nowrap;
 }
@@ -254,7 +233,7 @@ body,
 
     line-height: 1.2;
 
-    color: #D7E0F0;
+    color: #090c11;
 }
 
 .sinb svg {
@@ -315,9 +294,10 @@ body,
     margin: 0;
     padding: 15px 0 40px;
 
-    background: #09122C;
+    background: #ffffff;
 
-    color: #F8FAFC;
+    color: #162029;
+    padding: 0 40px;
 }
 
 
@@ -340,7 +320,7 @@ body,
     font-size: 30px;
     line-height: 1.2;
 
-    color: #F8FAFC;
+    color: #151b22;
 }
 
 

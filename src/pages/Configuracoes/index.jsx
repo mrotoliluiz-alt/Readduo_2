@@ -88,6 +88,7 @@ const seguranca = [
 
 function Configuracoes() {
   const { tema, setTema } = useTheme();
+  const navigate = useNavigate();
 
   return (
     <div className={styles.container}>
@@ -253,13 +254,13 @@ function Configuracoes() {
               <ChevronRight size={18} />
             </button>
 
-            <button className={styles.sair} 
+          </section>
+
+          <button className={styles.sair} 
             onClick={() => navigate('/')}>
               <p>sair</p>
               <ChevronRight size={18} />
             </button>
-
-          </section>
 
         </div>
 

@@ -123,6 +123,14 @@
   background: #1c2340;
 }
 
+:global([data-theme="escuro"]) .sair p{
+    color: #fff;
+}
+
+:global([data-theme="escuro"]) .sair:hover p{
+  color: rgb(187, 33, 33);
+}
+
 
 /* ===========================
    HEADER
@@ -1138,8 +1146,7 @@
 
 
 .sair{
-    width:100%;
-
+    width: 10vh;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -1150,10 +1157,14 @@
     border:none;
     border-bottom:1px solid #EDF2F7;
 
-    color:#a10606 !important;
+    color:#0f0606 !important;
     cursor:pointer;
 
     transition:.2s;
+}
+
+.sair:hover p{
+    color: rgb(141, 23, 23);
 }
 
 @media (max-width:650px){

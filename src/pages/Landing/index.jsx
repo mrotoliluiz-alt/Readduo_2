@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
 import CardLivro from "../../componentes/cardLivro";
+import TopBar from "../../componentes/topBar";
 
 import {
   Flame,
@@ -18,44 +19,7 @@ function Landing() {
     return (
         <div className={styles.landing}>
 
-            <nav className={styles.navbar}>
-
-                <div className={styles.logo}>
-
-                    <img src={logo} alt="logo" />
-
-                    <div className={styles.titulo}>
-
-                        <h1 className={styles.logoRead}>
-                            Read
-                        </h1>
-
-                        <h1 className={styles.logoDuo}>
-                            duo
-                        </h1>
-
-                    </div>
-
-                </div>
-
-
-                <div className={styles.boxBotoes}>
-
-                    <Botao
-                        texto="Entrar"
-                        variante="secondary"
-                        onClick={() => navigate("/login")}
-                    />
-
-                    <Botao
-                        texto="Cadastrar"
-                        variante="primary"
-                        onClick={() => navigate("/cadastro")}
-                    />
-
-                </div>
-
-            </nav>
+           <TopBar variante="landing" />
 
             <div className={styles.conteudoPrincipal}>
 
