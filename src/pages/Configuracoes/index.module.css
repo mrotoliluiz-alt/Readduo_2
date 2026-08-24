@@ -1136,6 +1136,26 @@
     color:#94A3B8;
 }
 
+
+.sair{
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:15px 0;
+
+    background:transparent !important;
+    border:none;
+    border-bottom:1px solid #EDF2F7;
+
+    color:#a10606 !important;
+    cursor:pointer;
+
+    transition:.2s;
+}
+
 @media (max-width:650px){
 
     .container{

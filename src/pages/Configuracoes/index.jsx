@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import { useNavigate } from 'react-router-dom';
 import { useTheme } from "../../Tema/themeContext.jsx";
 
 import {
@@ -249,6 +250,12 @@ function Configuracoes() {
 
             <button className={styles.atalho}>
               <p>Termos de Uso</p>
+              <ChevronRight size={18} />
+            </button>
+
+            <button className={styles.sair} 
+            onClick={() => navigate('/')}>
+              <p>sair</p>
               <ChevronRight size={18} />
             </button>
 
