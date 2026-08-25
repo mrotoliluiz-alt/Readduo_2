@@ -82,11 +82,6 @@ function Oficina() {
         />
         </div>
       </div>
-
-      {/* TABS */}
-
-      
-
       {/* CONTEÚDO */}
 
       <section className={styles.workspace}>

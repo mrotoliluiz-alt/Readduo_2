@@ -1,9 +1,8 @@
 import styles from './index.module.css';
 import { useNavigate } from 'react-router-dom';
-import logo from "../../assets/Group 50.svg";
-import Botao from '../../componentes/botao';
 import CardLivro from "../../componentes/cardLivro";
 import TopBar from "../../componentes/topBar";
+import Mascotão from "../../assets/Mascotão.png";
 
 import {
   Flame,
@@ -17,9 +16,11 @@ function Landing() {
     const navigate = useNavigate();
 
     return (
+        
+
         <div className={styles.landing}>
 
-           <TopBar variante="landing" />
+            <TopBar variante="landing" />
 
             <div className={styles.conteudoPrincipal}>
 
@@ -95,16 +96,11 @@ function Landing() {
 
                 <div className={styles.direita}>
 
-                    {/* 
-                        Futuramente coloque a imagem aqui.
-
-                        Exemplo:
-
+                   
                         <img
-                            src={suaImagem}
+                            src={Mascotão}
                             alt="Ilustração do Readduo"
                         />
-                    */}
 
                 </div>
 

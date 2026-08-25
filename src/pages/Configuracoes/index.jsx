@@ -258,8 +258,7 @@ function Configuracoes() {
 
           <button className={styles.sair} 
             onClick={() => navigate('/')}>
-              <p>sair</p>
-              <ChevronRight size={18} />
+              <span>sair</span>
             </button>
 
         </div>
