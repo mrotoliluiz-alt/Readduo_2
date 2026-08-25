@@ -104,7 +104,7 @@
 .Textos h2 {
     margin: 0;
 
-    font-size: 60px;
+    font-size: 85px;
     line-height: 1.15;
     font-weight: 750;
 
@@ -215,7 +215,8 @@
     min-height: 0;
     height: auto;
 
-    padding: 40px;
+    padding-right: 50px;
+    padding-top: 20px;
 }
 
 
@@ -223,8 +224,7 @@
 
 .direita img {
     width: 100%;
-    max-width: 550px;
-    max-height: 450px;
+    height: 100%;
     object-fit: contain;
 }
 
