@@ -153,6 +153,18 @@ function Landing() {
                         tipo="Livro"
                     />
 
+                      <CardLivro
+                        titulo="O Peso das Palavras Cura a Alma"
+                        autor="Sthefany Oliveira"
+                        tipo="Livro"
+                    />
+
+                      <CardLivro
+                        titulo="O Peso das Palavras Cura a Alma"
+                        autor="Sthefany Oliveira"
+                        tipo="Livro"
+                    />
+
                 </div>
 
             </section>
