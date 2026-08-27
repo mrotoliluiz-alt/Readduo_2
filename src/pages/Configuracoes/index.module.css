@@ -952,12 +952,14 @@
   background-color: rgb(255, 65, 65);
 }
 
+
 /* =====================================================
    ÍCONE
 ===================================================== */
 
 .sign {
   width: 100%;
+  flex-shrink: 0;
 
   transition-duration: .3s;
 
@@ -967,13 +969,19 @@
 }
 
 .sign svg {
-  width: 28px;
-  height: 28px;
+  width: 20px !important;
+  height: 20px !important;
+
+  min-width: 20px;
+  min-height: 20px;
+
+  flex-shrink: 0;
 }
 
 .sign svg path {
   fill: white;
 }
+
 
 /* =====================================================
    TEXTO
@@ -995,8 +1003,9 @@
   transition-duration: .3s;
 }
 
+
 /* =====================================================
-   ANIMAÇÃO DO BOTÃO
+   ANIMAÇÃO
 ===================================================== */
 
 .Btn:hover {
@@ -1006,17 +1015,16 @@
   transition-duration: .3s;
 }
 
-/* ÍCONE SE MOVE PARA A ESQUERDA */
 
 .Btn:hover .sign {
   width: 30%;
+  flex-shrink: 0;
 
   transition-duration: .3s;
 
   padding-left: 20px;
 }
 
-/* TEXTO APARECE */
 
 .Btn:hover .text {
   opacity: 1;
@@ -1027,10 +1035,33 @@
   padding-right: 10px;
 }
 
-/* EFEITO AO CLICAR */
+
+/* =====================================================
+   CLIQUE
+===================================================== */
 
 .Btn:active {
   transform: translate(2px, 2px);
+}
+
+/* scroll bar */
+
+.leitCard::-webkit-scrollbar {
+    height: 8px;
+}
+
+.leitCard::-webkit-scrollbar-track {
+    background: #10182F;
+    border-radius: 10px;
+}
+
+.leitCard::-webkit-scrollbar-thumb {
+    background: #0FA6B3;
+    border-radius: 10px;
+}
+
+.leitCard::-webkit-scrollbar-thumb:hover {
+    background: #12BAC8;
 }
 
 

@@ -3,17 +3,35 @@ import { useNavigate } from 'react-router-dom';
 import CardLivro from "../../componentes/cardLivro";
 import TopBar from "../../componentes/topBar";
 import Mascotão from "../../assets/Mascotão.png";
+import { useRef } from "react";
 
 import {
-  Flame,
-  BookText,
-  Star,
-  LibraryBig
+    Flame,
+    BookText,
+    Star,
+    LibraryBig,
+    ChevronLeft,
+    ChevronRight
 } from "lucide-react";
 
 function Landing() {
 
     const navigate = useNavigate();
+    const livrosRef = useRef(null);
+
+    const rolarEsquerda = () => {
+    livrosRef.current?.scrollBy({
+        left: -600,
+        behavior: "smooth",
+    });
+};
+
+    const rolarDireita = () => {
+        livrosRef.current?.scrollBy({
+            left: 600,
+            behavior: "smooth",
+        });
+    };
 
     return (
         
@@ -121,51 +139,72 @@ function Landing() {
                 </h3>
 
 
-                <div className={styles.leitCard}>
+   <div className={styles.areaLivros}>
 
-                    <CardLivro
-                        titulo="Deserto"
-                        autor="Amigo loko"
-                        tipo="Livro"
-                    />
+    <button
+        className={`${styles.botaoScroll} ${styles.esquerdaScroll}`}
+        onClick={rolarEsquerda}
+        aria-label="Ver livros anteriores"
+    >
+        <ChevronLeft size={32} strokeWidth={2.5} />
+    </button>
 
-                    <CardLivro
-                        titulo="Cuna"
-                        autor="Herbert Frank"
-                        tipo="Livro"
-                    />
+    <div
+        className={styles.leitCard}
+        ref={livrosRef}
+    >
+        <CardLivro
+            titulo="Deserto"
+            autor="Amigo loko"
+            tipo="Livro"
+        />
 
-                    <CardLivro
-                        titulo="Harry Poter"
-                        autor="Minha varinha magica"
-                        tipo="Livro"
-                    />
+        <CardLivro
+            titulo="Cuna"
+            autor="Herbert Frank"
+            tipo="Livro"
+        />
 
-                    <CardLivro
-                        titulo="Duna"
-                        autor="Frank Herbert"
-                        tipo="Livro"
-                    />
+        <CardLivro
+            titulo="Harry Poter"
+            autor="Minha varinha magica"
+            tipo="Livro"
+        />
 
-                    <CardLivro
-                        titulo="O Peso das Palavras Cura a Alma"
-                        autor="Sthefany Oliveira"
-                        tipo="Livro"
-                    />
+        <CardLivro
+            titulo="Duna"
+            autor="Frank Herbert"
+            tipo="Livro"
+        />
 
-                      <CardLivro
-                        titulo="O Peso das Palavras Cura a Alma"
-                        autor="Sthefany Oliveira"
-                        tipo="Livro"
-                    />
+        <CardLivro
+            titulo="O Peso das Palavras Cura a Alma"
+            autor="Sthefany Oliveira"
+            tipo="Livro"
+        />
 
-                      <CardLivro
-                        titulo="O Peso das Palavras Cura a Alma"
-                        autor="Sthefany Oliveira"
-                        tipo="Livro"
-                    />
+    <CardLivro
+            titulo="O Peso das Palavras Cura a Alma"
+            autor="Sthefany Oliveira"
+            tipo="Livro"
+        />
 
-                </div>
+        <CardLivro
+            titulo="O Peso das Palavras Cura a Alma"
+            autor="Sthefany Oliveira"
+            tipo="Livro"
+        />
+    </div>
+
+    <button
+        className={`${styles.botaoScroll} ${styles.direitaScroll}`}
+        onClick={rolarDireita}
+        aria-label="Ver próximos livros"
+    >
+        <ChevronRight size={24} />
+    </button>
+
+    </div>
 
             </section>
 

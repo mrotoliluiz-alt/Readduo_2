@@ -276,18 +276,76 @@
 
 .leitCard {
     width: 100%;
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
     gap: 22px;
 
     padding: 0 10px 20px;
 
     overflow-x: auto;
     overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    /* Esconde a barra no Firefox */
+    scrollbar-width: none;
 }
+
+/* Esconde a barra no Chrome, Edge e Safari */
+.leitCard::-webkit-scrollbar {
+    display: none;
+}
+
+.areaLivros {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.botaoScroll {
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #10182F;
+    color: #0FA6B3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    position: absolute;
+    z-index: 10;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.esquerdaScroll {
+    left: -20px;
+}
+
+.direitaScroll {
+    right: -20px;
+}
+
+.botaoScroll:hover {
+    background: #0FA6B3;
+    color: white;
+
+    transform: scale(1.08);
+}
+
 
 
 /* =====================================================
@@ -342,6 +400,18 @@
 [data-theme="escuro"] .baixo {
     background: #09122C;
     color: #F8FAFC;
+}
+
+[data-theme="escuro"] .botaoScroll {
+    background: #151F3B;
+    color: #0FA6B3;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="escuro"] .botaoScroll:hover {
+    background: #0FA6B3;
+    color: #FFFFFF;
 }
 
 

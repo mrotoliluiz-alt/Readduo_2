@@ -121,8 +121,13 @@
     border-bottom: 1px solid #273353;
 }
 
-[data-theme="escuro"] .logoDuo {
-    color: #F8FAFC;
+
+::global([data-theme="escuro"]) .logo .logoRead {
+    color: #0FA6B3 !important;
+}
+
+:global([data-theme="escuro"]) .logo .logoDuo {
+    color: #E2E8F0 !important;
 }
 
 

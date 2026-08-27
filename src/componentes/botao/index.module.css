@@ -1,13 +1,34 @@
 
 .botao {
+    display: inline-block;
+
+    padding: 13px 28px;
+
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
     cursor: pointer;
 
-    font-size: 15px;
-    font-weight: 600;
+    transition:
+        letter-spacing 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
 
-    transition: .2s;
+.botao:hover {
+    letter-spacing: 0.22em;
+}
+
+.botao:active {
+    letter-spacing: 0.05em;
 }
 
 /* Principal */
@@ -18,7 +39,11 @@
 }
 
 .primary:hover {
-    opacity: .9;
+    background: #0D94A0;
+}
+
+.primary:active {
+    transform: scale(0.97);
 }
 
 /* Secundário */
@@ -28,6 +53,15 @@
 
     border: 1px solid #0fa6b3;
     padding: 12px 24px;
+}
+
+.secondary:hover {
+    background: #0FA6B3;
+    color: #FFFFFF;
+}
+
+.secondary:active {
+    transform: scale(0.97);
 }
 
 /* Login */
