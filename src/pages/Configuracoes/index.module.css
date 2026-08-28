@@ -1044,25 +1044,7 @@
   transform: translate(2px, 2px);
 }
 
-/* scroll bar */
 
-.leitCard::-webkit-scrollbar {
-    height: 8px;
-}
-
-.leitCard::-webkit-scrollbar-track {
-    background: #10182F;
-    border-radius: 10px;
-}
-
-.leitCard::-webkit-scrollbar-thumb {
-    background: #0FA6B3;
-    border-radius: 10px;
-}
-
-.leitCard::-webkit-scrollbar-thumb:hover {
-    background: #12BAC8;
-}
 
 
 /* ==========================================

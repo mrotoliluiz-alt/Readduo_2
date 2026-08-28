@@ -192,15 +192,7 @@ function Perfil() {
             />
           </section>
 
-          {/* Tabs */}
-
-          <div className={styles.tabs}>
-            <button className={styles.active}>Atividade</button>
-            <button>Conquistas</button>
-            <button>Estatísticas</button>
-            <button>Favoritos</button>
-            <button>Amigos</button>
-          </div>
+          
 
           {/* Conteúdo */}
 
