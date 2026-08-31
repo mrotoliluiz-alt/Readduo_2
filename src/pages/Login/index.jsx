@@ -50,7 +50,7 @@ function Login() {
 
         {/* Logo e nome do site */}
         <div className={styles.logoBox}>
-          <img src= {logo} alt="logo" />
+          
           
           <h2 className={styles.titulo}>Read</h2>
           <h2 >duo</h2>
@@ -65,16 +65,16 @@ function Login() {
         </h2>
 
         <p>
-          Continue explorando, lendo e praticando! Novas histórias esperam por você.
+          Continue explorando, lendo e praticando! 
         </p>
         </div>
 
-        <ul>
-          <li> <TimerReset /> Retome onde parou</li>
-          <li> <ClipboardCheck /> Novas missões te aguardam</li>
-          <li> <Flame /> Sua sequência está ativa</li>
-        </ul>
+      
+        
+          <div className={styles.img}>
+            <img src= {logo} alt="logo" />
 
+          </div>
       </div>
 
       <p>
