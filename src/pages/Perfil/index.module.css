@@ -883,7 +883,6 @@ AVATAR AMIGOS
 
 /* ================= TEXTOS ================= */
 
-:global([data-theme="escuro"]) h1,
 :global([data-theme="escuro"]) h2,
 :global([data-theme="escuro"]) h3,
 :global([data-theme="escuro"]) h4 {

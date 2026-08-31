@@ -10,9 +10,11 @@ import {
   House,
   BookOpen,
   ArrowLeft,
-  CircleCheckBig,
   PenTool,
-  User
+  User,
+  TimerReset,
+  ClipboardCheck,
+  Flame
 } from "lucide-react";
 
 function Login() {
@@ -50,8 +52,8 @@ function Login() {
         <div className={styles.logoBox}>
           <img src= {logo} alt="logo" />
           
-          <h2>Read</h2>
-          <h2 className={styles.titulo}>duo</h2>
+          <h2 className={styles.titulo}>Read</h2>
+          <h2 >duo</h2>
         </div>
 
         
@@ -59,9 +61,7 @@ function Login() {
         <div className={styles.texto}>
         
         <h2 className={styles.Hgrande}>
-          <BookOpen size={40}></BookOpen> Bem-vindo
-          <br />
-          de volta!
+          <BookOpen size={40}></BookOpen> Bem-vindo de volta!
         </h2>
 
         <p>
@@ -70,9 +70,9 @@ function Login() {
         </div>
 
         <ul>
-          <li> <CircleCheckBig /> Retome onde parou</li>
-          <li> <CircleCheckBig /> Novas missões te aguardam</li>
-          <li> <CircleCheckBig /> Sua sequência está ativa</li>
+          <li> <TimerReset /> Retome onde parou</li>
+          <li> <ClipboardCheck /> Novas missões te aguardam</li>
+          <li> <Flame /> Sua sequência está ativa</li>
         </ul>
 
       </div>

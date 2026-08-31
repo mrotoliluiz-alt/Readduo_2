@@ -15,7 +15,9 @@
     #2563eb 100%
   );
 
-  padding: 48px;
+  padding-left: 48px;
+  padding-top: 48px;
+  padding-right: 5px;
   color: white;
 
   display: flex;
@@ -58,7 +60,8 @@
 }
 
 .leftContent {
-  max-width: 380px;
+  width: 100%;
+  height: 50vh;
 }
 
 .logoBox {
@@ -73,14 +76,15 @@
 }
 
 .titulo{
-  color: #0f172a;
+  color: #0FA6B3;
+  margin-left: 20px;
 }
 
 .leftContent p {
   font-size: 28px;
   opacity: .9;
   margin-bottom: 32px;
-  margin-left: 32px;
+  
 }
 
 .leftContent a {
@@ -103,6 +107,7 @@
 }
 
 .texto{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,7 +177,7 @@
 
 .Hgrande{
   font-weight: bold;
-  font-size: 5.2em;
+  font-size: 6em;
 }
 
 /* =====================================================
@@ -213,7 +218,7 @@
 /* ---------- Logo / título ---------- */
 
 [data-theme="escuro"] .titulo {
-  color: #F8FAFC;
+  color: #0f172a;
 }
 
 
