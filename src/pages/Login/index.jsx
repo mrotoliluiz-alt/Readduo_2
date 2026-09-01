@@ -7,14 +7,10 @@ import logo from "../../assets/Group 50.svg";
 import Botao from '../../componentes/botao';
 import { Navigate } from "react-router-dom";
 import {
-  House,
   BookOpen,
   ArrowLeft,
-  PenTool,
-  User,
-  TimerReset,
-  ClipboardCheck,
-  Flame
+  Mail,
+  Lock,
 } from "lucide-react";
 
 function Login() {
@@ -45,7 +41,7 @@ function Login() {
       <div className={styles.leftContent}>
 
         <a href="/">
-             Voltar ao Inicio <ArrowLeft></ArrowLeft>
+             <ArrowLeft></ArrowLeft> Voltar ao Inicio 
           </a>
 
         {/* Logo e nome do site */}
@@ -63,18 +59,14 @@ function Login() {
         <h2 className={styles.Hgrande}>
           <BookOpen size={40}></BookOpen> Bem-vindo de volta!
         </h2>
-
-        <p>
-          Continue explorando, lendo e praticando! 
-        </p>
         </div>
 
       
         
-          <div className={styles.img}>
+          
             <img src= {logo} alt="logo" />
 
-          </div>
+
       </div>
 
       <p>
@@ -94,12 +86,22 @@ function Login() {
           Digite suas credenciais para acessar
         </p>
 
-        <input
+        <div className={styles.inputs}>
+            
+            <Mail className={styles.iconInput} size={20}/>
+
+          <input
           type="email"
-          placeholder="Seu e-mail"
+          placeholder= "Seu e-mail"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        </div>
+
+
+        <div className={styles.inputs}>
+
+          <Lock className={styles.iconInput} size={20}/>
 
         <input
           type="password"
@@ -107,6 +109,9 @@ function Login() {
           value={senha}
           onChange={(e) => setSenha(e.target.value)}
         />
+
+        </div>
+        
 
         <Botao
         texto='Entrar'

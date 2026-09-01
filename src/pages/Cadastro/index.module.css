@@ -1,46 +1,57 @@
-.conteiner{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    background-color: #f8fafc;
+.loginContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background: #f8fafc;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
-.LadoEsquerdo{
-    width: 50%;
-    background: linear-gradient(
+
+/* =========================================
+   LADO ESQUERDO
+========================================= */
+
+.ladoEsquerdo {
+  width: 50%;
+
+  background: linear-gradient(
     135deg,
     #0fa6b3 0%,
     #2563eb 100%
   );
 
-    padding: 48px;
-    color: white;
+  padding-left: 48px;
+  padding-top: 48px;
+  padding-right: 5px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  color: white;
 
-    position: relative;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+  overflow: hidden;
 }
 
-.LadoEsquerdo::before {
+
+/* Círculo superior */
+
+.ladoEsquerdo::before {
   content: "";
-  position: absolute;
 
-  width: 300px;
-  height: 300px;
-
-  border-radius: 50%;
-
-  background: rgba(255,255,255,0.06);
-
-  left: 550px;
-  top: -100px;
-}
-
-.LadoEsquerdo::after {
-  content: "";
   position: absolute;
 
   width: 280px;
@@ -48,249 +59,498 @@
 
   border-radius: 50%;
 
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
 
-  right: 600px;
+  left: -80px;
+  top: 60px;
+}
+
+
+/* Círculo inferior */
+
+.ladoEsquerdo::after {
+  content: "";
+
+  position: absolute;
+
+  width: 380px;
+  height: 380px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  right: -120px;
   bottom: -100px;
 }
 
-.LadoE_componentes{
-    max-width: 380px;
+
+/* =========================================
+   CONTEÚDO ESQUERDO
+========================================= */
+
+.leftContent {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
 }
 
-.LadoE_componentes a{
-    color: white;
+
+/* Voltar */
+
+.leftContent a {
+  margin-bottom: 25px;
+
+  font-weight: bold;
+
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 4px;
+
+  text-decoration: none;
+
+  position: relative;
+  z-index: 5;
 }
 
-.LadoE_componentes h2{
-    margin-top: 2em;
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logoBox {
+  display: flex;
+  align-items: center;
+
+  margin-top: 35px;
 }
 
-.LadoE_componentes p{
-    font-size: 18px;
-    opacity: .9;
-    margin-bottom: 32px;
+.logoBox h2 {
+  font-size: 50px;
+  font-weight: 800;
+
+  margin: 0;
 }
 
-.Hgrande{
-    font-size: 5.2em;
-    font-weight: bold;
+.titulo {
+  color: #0f172a;
+
+  font-size: 30px;
+  font-weight: 800;
 }
 
-.LadoDireito{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-}
 
-.ConteinerForm{
-    width: 100%;
-  max-width: 450px;
+/* =========================================
+   TEXTO
+========================================= */
+
+.texto {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
+
+  margin-left: 5px;
+
+  position: relative;
+  z-index: 3;
 }
 
-.ConteinerForm h2{
-    font-size: 48px;
-    color: #0f172a;
-    margin-bottom: 10px;
+
+.Hgrande {
+  font-weight: bold;
+  font-size: 5em;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: white;
 }
 
-.ConteinerForm p{
-    color: #64748b;
+
+/* Texto menor */
+
+.leftContent p {
+  font-size: 28px;
+
+  opacity: 0.9;
+
+  margin-bottom: 32px;
+}
+
+
+/* =========================================
+   MASCOTE
+========================================= */
+
+.leftContent img {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  object-fit: contain;
+
+  left: 40%;
+  top: 58%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   LADO DIREITO
+========================================= */
+
+.rightSide {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+.formCard {
+  width: 100%;
+  max-width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.formCard h2 {
+  font-size: 48px;
+
+  color: #0f172a;
+
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+
+.formCard p {
+  color: #64748b;
+
   margin-bottom: 30px;
+
+  text-align: center;
 }
 
-.ConteinerForm input{
-    height: 58px;
-  border: 1px solid #dbe3ee;
-  border-radius: 14px;
-  padding: 0 18px;
+
+/* =========================================
+   INPUTS
+========================================= */
+
+.inputs {
+  position: relative;
+
+  width: 100%;
+
   margin-bottom: 18px;
+}
+
+
+.inputs input {
+  width: 100%;
+  height: 58px;
+
+  box-sizing: border-box;
+
+  padding: 0 18px 0 50px;
+
+  border: 1px solid #dbe3ee;
+
+  border-radius: 14px;
+
   font-size: 15px;
 }
 
-.Entrar{
-    margin-top: 25px;
-  text-align: center;
+
+.iconInput {
+  position: absolute;
+
+  left: 18px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
   color: #64748b;
+
+  pointer-events: none;
+
+  z-index: 2;
 }
 
-.Entrar a{
-    color: #0fa6b3;
-  text-decoration: none;
-  font-weight: 600;
-  margin-left: 5px;
-}
+
+/* =========================================
+   ERRO
+========================================= */
 
 .erro {
   margin-top: 12px;
+
   color: #ef4444;
+
+  text-align: center;
 }
 
-/* =====================================================
+
+/* =========================================
+   SUCESSO
+========================================= */
+
+.sucesso {
+  margin-top: 12px;
+
+  color: #22c55e;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.register {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #64748b;
+}
+
+
+.register a {
+  color: #0fa6b3;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  margin-left: 5px;
+}
+
+
+/* =========================================
    MODO ESCURO
-===================================================== */
+========================================= */
 
-/* ---------- Fundo geral ---------- */
-
-[data-theme="escuro"] .conteiner {
-    background-color: #09122C;
+[data-theme="escuro"] .loginContainer {
+  background: #09122c;
 }
 
 
-/* ---------- Lado esquerdo ---------- */
+/* Lado esquerdo */
 
-[data-theme="escuro"] .LadoEsquerdo {
-    background: linear-gradient(
-        135deg,
-        #087f8a 0%,
-        #173f9e 100%
-    );
-
-    color: #F8FAFC;
+[data-theme="escuro"] .ladoEsquerdo {
+  background: linear-gradient(
+    135deg,
+    #087f8a 0%,
+    #173f9e 100%
+  );
 }
 
 
-/* ---------- Elementos decorativos ---------- */
+/* Círculos */
 
-[data-theme="escuro"] .LadoEsquerdo::before {
-    background: rgba(255, 255, 255, 0.05);
+[data-theme="escuro"] .ladoEsquerdo::before {
+  background: rgba(255, 255, 255, 0.05);
 }
 
-[data-theme="escuro"] .LadoEsquerdo::after {
-    background: rgba(255, 255, 255, 0.05);
-}
-
-
-/* ---------- Conteúdo do lado esquerdo ---------- */
-
-[data-theme="escuro"] .LadoE_componentes {
-    color: #F8FAFC;
-}
-
-[data-theme="escuro"] .LadoE_componentes a {
-    color: #F8FAFC;
-}
-
-[data-theme="escuro"] .LadoE_componentes h2 {
-    color: #F8FAFC;
-}
-
-[data-theme="escuro"] .LadoE_componentes p {
-    color: #D7E0F0;
+[data-theme="escuro"] .ladoEsquerdo::after {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 
-/* ---------- Texto grande ---------- */
+/* Textos */
+
+[data-theme="escuro"] .titulo {
+  color: #0f172a;
+}
+
+[data-theme="escuro"] .leftContent a {
+  color: #f8fafc;
+}
+
+[data-theme="escuro"] .leftContent p {
+  color: #f8fafc;
+}
 
 [data-theme="escuro"] .Hgrande {
-    color: #F8FAFC;
+  color: #f8fafc;
 }
 
 
-/* ---------- Lado direito ---------- */
+/* =========================================
+   LADO DIREITO
+========================================= */
 
-[data-theme="escuro"] .LadoDireito {
-    background: #09122C;
+[data-theme="escuro"] .rightSide {
+  background: #09122c;
 }
 
 
-/* ---------- Formulário ---------- */
+/* Formulário */
 
-[data-theme="escuro"] .ConteinerForm {
-    color: #F8FAFC;
+[data-theme="escuro"] .formCard h2 {
+  color: #f8fafc;
 }
 
-[data-theme="escuro"] .ConteinerForm h2 {
-    color: #F8FAFC;
-}
-
-[data-theme="escuro"] .ConteinerForm p {
-    color: #AAB7D1;
+[data-theme="escuro"] .formCard p {
+  color: #aab7d1;
 }
 
 
-/* ---------- Inputs ---------- */
+/* =========================================
+   INPUTS ESCURO
+========================================= */
 
-[data-theme="escuro"] .ConteinerForm input {
-    background-color: #151F3B;
-    border: 1px solid #29385E;
-    color: #F8FAFC;
-}
+[data-theme="escuro"] .inputs input {
+  background: #151f3b;
 
-[data-theme="escuro"] .ConteinerForm input::placeholder {
-    color: #7F8EAB;
-}
+  border: 1px solid #29385e;
 
-[data-theme="escuro"] .ConteinerForm input:focus {
-    outline: none;
-    border-color: #0FA6B3;
-    box-shadow: 0 0 0 2px rgba(15, 166, 179, 0.15);
+  color: #f8fafc;
 }
 
 
-/* ---------- Link para entrar ---------- */
-
-[data-theme="escuro"] .Entrar {
-    color: #AAB7D1;
-}
-
-[data-theme="escuro"] .Entrar a {
-    color: #0FA6B3;
+[data-theme="escuro"] .inputs input::placeholder {
+  color: #7f8eab;
 }
 
 
-/* ---------- Erro ---------- */
+[data-theme="escuro"] .inputs input:focus {
+  outline: none;
+
+  border-color: #0fa6b3;
+
+  box-shadow:
+    0 0 0 2px rgba(15, 166, 179, 0.15);
+}
+
+
+[data-theme="escuro"] .iconInput {
+  color: #7f8eab;
+}
+
+
+/* =========================================
+   LOGIN ESCURO
+========================================= */
+
+[data-theme="escuro"] .register {
+  color: #aab7d1;
+}
+
+
+[data-theme="escuro"] .register a {
+  color: #0fa6b3;
+}
+
+
+/* =========================================
+   ERRO / SUCESSO
+========================================= */
 
 [data-theme="escuro"] .erro {
-    color: #f87171;
+  color: #f87171;
+}
+
+[data-theme="escuro"] .sucesso {
+  color: #4ade80;
 }
 
 
-/* =====================================================
-   RESPONSIVIDADE - MODO ESCURO
-===================================================== */
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
 
-@media (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
-    [data-theme="escuro"] .LadoDireito {
-        background: #09122C;
-    }
-
-    [data-theme="escuro"] .ConteinerForm h2 {
-        color: #F8FAFC;
-    }
-
-    [data-theme="escuro"] .ConteinerForm p {
-        color: #AAB7D1;
-    }
-
-    [data-theme="escuro"] .ConteinerForm input {
-        background-color: #151F3B;
-        border-color: #29385E;
-        color: #F8FAFC;
-    }
-
-    [data-theme="escuro"] .Entrar {
-        color: #AAB7D1;
-    }
-
-}
-
-@media (max-width: 900px) {
-  .leftSide {
-    display: none;
+  .loginContainer {
+    flex-direction: column;
   }
+
+
+  .ladoEsquerdo {
+    width: 100%;
+    height: 50vh;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+  }
+
+
+  .logoBox h2 {
+    font-size: 35px;
+  }
+
+
+  .Hgrande {
+    font-size: 40px;
+
+    margin-top: 35px;
+  }
+
+
+  .leftContent p {
+    font-size: 18px;
+  }
+
+
+  .leftContent img {
+    width: 300px;
+    height: 300px;
+
+    left: 50%;
+    top: 70%;
+  }
+
 
   .rightSide {
     width: 100%;
-    padding: 24px;
+    min-height: 50vh;
+
+    padding: 30px;
+
+    box-sizing: border-box;
   }
+
 
   .formCard {
     max-width: 100%;
   }
+
+
+  .formCard h2 {
+    font-size: 38px;
+  }
+
+
+  .inputs input {
+    height: 52px;
+  }
+
 }
